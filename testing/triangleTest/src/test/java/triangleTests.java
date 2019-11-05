@@ -42,6 +42,11 @@ public class triangleTests {
         triangle.setSides(2,6,3);
         assertEquals(-1, triangle.exists());
     }
+    @Test
+    void testWithSetSides6Exp0() {
+        triangle.setSides(0.5,0.2,0.3);
+        assertEquals(0, triangle.exists());
+    }
 
 
 }
