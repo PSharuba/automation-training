@@ -75,13 +75,14 @@ public class AirportTest {
     public void testHasAtLeastOneBomberInMilitaryPlanes() {
         Airport airport = new Airport(planes);
         List<MilitaryPlane> bomberMilitaryPlanes = airport.getBomberMilitaryPlanes();
+        boolean hasMilitaryBomber = false;
         for (MilitaryPlane militaryPlane : bomberMilitaryPlanes) {
-            if ((militaryPlane.getType() == MilitaryType.BOMBER)) {
+            if (militaryPlane.getType() == MilitaryType.BOMBER) {
+                hasMilitaryBomber = true;
                 break;
-            } else {
-                Assert.fail("Test failed!");
             }
         }
+        Assert.assertTrue(hasMilitaryBomber);
     }
 
     @Test
