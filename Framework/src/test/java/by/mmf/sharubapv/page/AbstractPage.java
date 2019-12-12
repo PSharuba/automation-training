@@ -1,16 +1,21 @@
 package by.mmf.sharubapv.page;
 
+import by.mmf.sharubapv.driver.DriverSingleton;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
-public abstract class AbstractPage
-{
-	protected WebDriver driver;
+public abstract class AbstractPage {
 
-	protected abstract AbstractPage openPage();
-	protected final int WAIT_TIMEOUT_SECONDS = 10;
+    protected final Logger logger = LogManager.getRootLogger();
+    protected WebDriver driver;
 
-	protected AbstractPage(WebDriver driver)
-	{
-		this.driver = driver;
-	}
+    protected abstract AbstractPage openPage();
+
+    protected final int WAIT_TIMEOUT_SECONDS = 10;
+
+    protected AbstractPage() {
+        this.driver = DriverSingleton.getDriver();
+        logger.info("Page object created");
+    }
 }

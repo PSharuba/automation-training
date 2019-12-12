@@ -12,9 +12,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.apache.logging.log4j.Logger;
 
 public class BookRoomPage extends AbstractPage {
-    private final Logger logger= LogManager.getRootLogger();
 
     private String baseUrl;
+
+    @FindBy(xpath="//*[@id='headline']/h1")
+    private WebElement finishPaymentHeader;
 
     @FindBy(xpath = "//*[@id='room-details-room-0-first-name']")
     private WebElement firstGuestFirstName;
@@ -33,11 +35,10 @@ public class BookRoomPage extends AbstractPage {
 
     private final By linkBookFormLocator = By.xpath("//*[@id='booking-form']");
 
-    public BookRoomPage(WebDriver driver) {
-        super(driver);
+    public BookRoomPage() {
+        super();
         baseUrl = driver.getCurrentUrl();
         PageFactory.initElements(this.driver, this);
-        logger.info("Booking page class created");
     }
 
     public BookRoomPage bookRoom(Guest firstGuest, Guest secondGuest) {
@@ -52,9 +53,8 @@ public class BookRoomPage extends AbstractPage {
         return this;
     }
 
-    public boolean isComplete() {
-        WebElement header = driver.findElement(By.xpath("//*[@id='headline']/h1"));
-        return !(header.getText().isEmpty());
+    public boolean isBookingComplete() {
+        return !(finishPaymentHeader.getText().isEmpty());
     }
 
     @Override

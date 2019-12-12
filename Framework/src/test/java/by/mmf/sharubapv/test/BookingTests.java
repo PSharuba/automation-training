@@ -13,18 +13,18 @@ import static org.hamcrest.Matchers.is;
 
 public class BookingTests extends CommonConditions {
     @Test
-    public void OneCanBookRoomForTwoAdults() {
+    public void oneCanBookRoomForTwoAdults() {
         Guest firstGuest = GuestCreator.withCredentialsFromProperty(0);
         Guest secondGuest = GuestCreator.withCredentialsFromProperty(1);
         SearchQuery searchQuery = SearchQueryCreator.withCredentialsFromProperty();
-        boolean searchComplete = new SearchPage(driver)
+        boolean isSearchComplete = new SearchPage()
                 .openPage()
                 .enterDataToSearchFor(searchQuery)
                 .clickSearchButton()
                 .goToHotelPage(0)
                 .goToRoomBookPage(0)
                 .bookRoom(firstGuest, secondGuest)
-                .isComplete();
-        assertThat(searchComplete, is(equalTo(true)));
+                .isBookingComplete();
+        assertThat(isSearchComplete, is(equalTo(true)));
     }
 }

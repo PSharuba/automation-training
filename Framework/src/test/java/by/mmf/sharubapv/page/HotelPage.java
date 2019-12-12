@@ -13,9 +13,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HotelPage extends AbstractPage {
 
-    private final Logger logger= LogManager.getRootLogger();
-
     private String baseUrl;
+
+    private final By SIGN_IN_BUTTON_LOCATOR = By.xpath("//*[@id='header-sign-in']");
+    private final By ACCOUNT_BUTTON_LOCATOR = By.xpath("//*[@class='nav-section-toggle']/label");
+    private final By PAYMENT_MESSAGE_LOCATOR = By.xpath("/span[@class='payment-message']");
+    private final By ONLINE_PAYMENT_LOCATOR = By.xpath("//*[@id='pay-now-etp-form']/button");
+    private final String ROOM_BOOK_BUTTON_LOCATOR_PREFIX = "//*[@id='rooms-and-rates.room-";
+    private final String ROOM_BOOK_BUTTON_LOCATOR_POSTFIX = "-rateplan-1']/button";
+
+    @FindBy(xpath = "//*[@id='header-toggle-currency']")
+    private WebElement moneyChangeButton;
 
     @FindBy(xpath = "//*[@id='q-destination']")
     private WebElement citySearchField;
@@ -27,7 +35,6 @@ public class HotelPage extends AbstractPage {
     private WebElement dateToLeaveField;
 
     @FindBy(xpath = "//button[contains(text(), 'Найти')]")
-    //"//*[@id=\"hds-marquee\"]/div[2]/div[1]/div/form/div[4]/button")
     private WebElement searchButton;
 
     @FindBy(xpath = "//ul[contains(class(), 'rooms')]")
@@ -37,13 +44,12 @@ public class HotelPage extends AbstractPage {
 
     private final By linkRoomsListLocator = By.xpath("//ul[contains(class(), 'rooms')]");
 
-    private final By linkWidgetPaymentMethodLocator = By.xpath("//div[contains(class(), 'widget-overlay')]");
+    //private final By linkWidgetPaymentMethodLocator = By.xpath("//div[contains(class(), 'widget-overlay')]");
 
-    public HotelPage(WebDriver driver, String baseUrl) {
-        super(driver);
+    public HotelPage(String baseUrl) {
+        super();
         this.baseUrl = baseUrl;
         PageFactory.initElements(this.driver, this);
-        logger.info("Hotel page class created");
     }
 
     public HotelPage getRoomsList() {
@@ -58,31 +64,20 @@ public class HotelPage extends AbstractPage {
         WebElement bookRoomLinkButton;
         if (roomNumberInList < rooms.length) {
             bookRoomLinkButton = rooms[roomNumberInList].
-                    findElement(By.xpath("//*[@id=\"rooms-and-rates.room-" + (roomNumberInList + 1) + "-rateplan-1\"]/button"));
+                    findElement(By.xpath(ROOM_BOOK_BUTTON_LOCATOR_PREFIX + (roomNumberInList - 1) + ROOM_BOOK_BUTTON_LOCATOR_POSTFIX));
             logger.info("Got button for chosen room");
         } else {
             bookRoomLinkButton = rooms[0].
-                    findElement(By.xpath("//*[@id=\"rooms-and-rates.room-1-rateplan-1\"]/button"));
+                    findElement(By.xpath(ROOM_BOOK_BUTTON_LOCATOR_PREFIX + 0 + ROOM_BOOK_BUTTON_LOCATOR_POSTFIX));
             logger.warn("No such room found. Taking first room");
         }
-        if (checkIfPaymentWidgetExists()) {
-            driver.findElement(By.xpath("//*[@id=\"pay-now-etp-form\"]/button")).click();
+        try {
+            driver.findElement(PAYMENT_MESSAGE_LOCATOR);
+            driver.findElement(ONLINE_PAYMENT_LOCATOR).click();
+        } catch (NoSuchElementException ignored) {
         }
         logger.info("Going to room booking page");
-        return new BookRoomPage(driver);
-    }
-
-    private boolean checkIfPaymentWidgetExists() {
-        logger.info("Checking payment methods");
-        try {
-            driver.findElement(linkWidgetPaymentMethodLocator);
-        } catch (NoSuchElementException e) {
-            logger.info("Only online payment");
-            return false;
-        }
-        logger.info("Both ways of payment available");
-        return true;
-
+        return new BookRoomPage();
     }
 
     @Override

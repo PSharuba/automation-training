@@ -18,6 +18,7 @@ import java.time.format.DateTimeFormatter;
 
 public class TestListener implements ITestListener {
     private Logger log = LogManager.getRootLogger();
+    private final Logger logger= LogManager.getRootLogger();
 
     public void onTestStart(ITestResult iTestResult) {
 
@@ -40,11 +41,11 @@ public class TestListener implements ITestListener {
     }
 
     public void onStart(ITestContext iTestContext) {
-
+        logger.info("Test started");
     }
 
     public void onFinish(ITestContext iTestContext) {
-
+logger.info("Test finished");
     }
 
     private void saveScreenshot(){
