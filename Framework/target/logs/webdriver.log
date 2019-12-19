@@ -1,0 +1,170 @@
+2019-12-15 13:01:18,432 INFO  [main] Test started
+2019-12-15 13:01:18,460 INFO  [main] Test finished
+2019-12-15 13:02:04,554 INFO  [main] Test started
+2019-12-15 13:02:22,150 INFO  [main] Test finished
+2019-12-15 13:06:25,320 INFO  [main] Test started
+2019-12-15 13:06:40,350 INFO  [main] Test finished
+2019-12-15 13:11:46,648 INFO  [main] Test started
+2019-12-15 13:11:49,375 INFO  [main] Test finished
+2019-12-15 13:25:37,180 INFO  [main] Page object created
+2019-12-15 13:25:40,642 INFO  [main] Opening search page
+2019-12-15 13:25:41,567 INFO  [main] Search fields filled
+2019-12-15 13:25:41,567 INFO  [main] Searching for error message
+2019-12-15 13:26:59,398 INFO  [main] Page object created
+2019-12-15 13:27:03,066 INFO  [main] Opening search page
+2019-12-15 13:27:04,234 INFO  [main] Search fields filled
+2019-12-15 13:27:04,234 INFO  [main] Searching for error message
+2019-12-15 13:29:18,695 INFO  [main] Page object created
+2019-12-15 13:29:22,323 INFO  [main] Opening search page
+2019-12-15 13:31:43,982 INFO  [main] Page object created
+2019-12-15 13:31:47,818 INFO  [main] Opening search page
+2019-12-15 13:33:16,195 INFO  [main] Page object created
+2019-12-15 13:33:19,812 INFO  [main] Opening search page
+2019-12-15 13:33:21,113 INFO  [main] Search fields filled
+2019-12-15 13:33:21,113 INFO  [main] Searching for error message
+2019-12-15 13:37:58,083 INFO  [main] Page object created
+2019-12-15 13:38:01,827 INFO  [main] Opening search page
+2019-12-15 13:38:03,040 INFO  [main] Search fields filled
+2019-12-15 13:38:03,041 INFO  [main] Searching for error message
+2019-12-15 13:39:33,074 INFO  [main] Page object created
+2019-12-15 13:39:36,739 INFO  [main] Opening search page
+2019-12-15 13:39:37,923 INFO  [main] Search fields filled
+2019-12-15 13:39:37,924 INFO  [main] Searching for error message
+2019-12-15 13:41:09,524 INFO  [main] Page object created
+2019-12-15 13:41:13,224 INFO  [main] Opening search page
+2019-12-15 13:41:14,353 INFO  [main] Search fields filled
+2019-12-15 13:41:14,354 INFO  [main] Searching for error message
+2019-12-15 13:43:04,171 INFO  [main] Page object created
+2019-12-15 13:43:07,830 INFO  [main] Opening search page
+2019-12-15 13:43:08,972 INFO  [main] Search fields filled
+2019-12-15 13:43:08,973 INFO  [main] Searching for error message
+2019-12-15 13:43:48,480 INFO  [main] Page object created
+2019-12-15 13:43:51,934 INFO  [main] Opening search page
+2019-12-15 13:43:52,969 INFO  [main] Search fields filled
+2019-12-15 13:43:52,969 INFO  [main] Searching for error message
+2019-12-15 13:44:54,033 INFO  [main] Page object created
+2019-12-15 13:44:57,405 INFO  [main] Opening search page
+2019-12-15 13:44:58,802 INFO  [main] Search fields filled
+2019-12-15 13:44:58,803 INFO  [main] Searching for error message
+2019-12-15 13:45:29,669 INFO  [main] Page object created
+2019-12-15 13:45:33,419 INFO  [main] Opening search page
+2019-12-15 13:45:34,562 INFO  [main] Search fields filled
+2019-12-15 13:45:34,562 INFO  [main] Searching for error message
+2019-12-15 13:47:39,842 INFO  [main] Page object created
+2019-12-15 13:47:42,986 INFO  [main] Opening search page
+2019-12-15 13:47:44,131 INFO  [main] Search fields filled
+2019-12-15 13:47:46,812 INFO  [main] Going to main page
+2019-12-15 13:47:46,814 INFO  [main] Page object created
+2019-12-15 13:49:54,472 INFO  [main] Page object created
+2019-12-15 13:49:58,023 INFO  [main] Opening search page
+2019-12-15 13:49:58,977 INFO  [main] Search fields filled
+2019-12-15 13:50:01,701 INFO  [main] Going to main page
+2019-12-15 13:50:01,702 INFO  [main] Page object created
+2019-12-15 13:50:02,004 INFO  [main] Hotels list found
+2019-12-15 13:53:48,931 INFO  [main] Page object created
+2019-12-15 13:53:52,867 INFO  [main] Opening search page
+2019-12-15 13:53:53,895 INFO  [main] Search fields filled
+2019-12-15 13:53:56,605 INFO  [main] Going to main page
+2019-12-15 13:53:56,606 INFO  [main] Page object created
+2019-12-15 13:53:56,918 INFO  [main] Hotels list found
+2019-12-15 13:55:11,037 INFO  [main] Page object created
+2019-12-15 13:55:14,437 INFO  [main] Opening search page
+2019-12-15 13:55:15,438 INFO  [main] Search fields filled
+2019-12-15 13:55:17,992 INFO  [main] Going to main page
+2019-12-15 13:55:17,994 INFO  [main] Page object created
+2019-12-15 13:55:18,289 INFO  [main] Hotels list found
+2019-12-15 13:56:42,836 INFO  [main] Page object created
+2019-12-15 13:56:46,580 INFO  [main] Opening search page
+2019-12-15 13:56:47,740 INFO  [main] Search fields filled
+2019-12-15 13:56:50,275 INFO  [main] Going to main page
+2019-12-15 13:56:50,276 INFO  [main] Page object created
+2019-12-15 13:56:50,589 INFO  [main] Hotels list found
+2019-12-15 13:57:46,168 INFO  [main] Page object created
+2019-12-15 13:57:49,705 INFO  [main] Opening search page
+2019-12-15 13:57:50,689 INFO  [main] Search fields filled
+2019-12-15 13:57:54,010 INFO  [main] Going to main page
+2019-12-15 13:57:54,012 INFO  [main] Page object created
+2019-12-15 13:57:54,360 INFO  [main] Hotels list found
+2019-12-15 13:59:06,126 INFO  [main] Page object created
+2019-12-15 13:59:09,627 INFO  [main] Opening search page
+2019-12-15 13:59:10,609 INFO  [main] Search fields filled
+2019-12-15 13:59:10,713 INFO  [main] Going to main page
+2019-12-15 13:59:10,715 INFO  [main] Page object created
+2019-12-15 14:05:22,942 INFO  [main] Page object created
+2019-12-15 14:05:28,009 INFO  [main] Opening search page
+2019-12-15 14:05:28,940 INFO  [main] Search fields filled
+2019-12-15 14:05:29,045 INFO  [main] Waiting for error message
+2019-12-15 14:10:46,179 INFO  [main] Page object created
+2019-12-15 14:10:49,822 INFO  [main] Opening search page
+2019-12-15 14:10:52,209 INFO  [main] Page object created
+2019-12-15 14:16:40,598 INFO  [main] Page object created
+2019-12-15 14:16:44,616 INFO  [main] Opening search page
+2019-12-15 14:16:46,668 INFO  [main] Page object created
+2019-12-15 14:26:53,091 INFO  [main] Page object created
+2019-12-15 14:26:56,812 INFO  [main] Opening search page
+2019-12-15 14:26:59,038 INFO  [main] Page object created
+2019-12-15 14:28:36,143 INFO  [main] Page object created
+2019-12-15 14:28:39,813 INFO  [main] Opening search page
+2019-12-15 14:28:41,972 INFO  [main] Page object created
+2019-12-15 14:28:42,987 INFO  [main] Search fields filled
+2019-12-15 14:28:43,092 INFO  [main] Going to main page
+2019-12-15 14:28:43,094 INFO  [main] Page object created
+2019-12-15 14:31:38,119 INFO  [main] Page object created
+2019-12-15 14:31:41,361 INFO  [main] Opening search page
+2019-12-15 14:31:44,185 INFO  [main] Page object created
+2019-12-15 14:31:45,294 INFO  [main] Search fields filled
+2019-12-15 14:31:45,449 INFO  [main] Going to main page
+2019-12-15 14:31:45,451 INFO  [main] Page object created
+2019-12-15 14:33:05,856 INFO  [main] Page object created
+2019-12-15 14:33:09,323 INFO  [main] Opening search page
+2019-12-15 14:33:11,554 INFO  [main] Page object created
+2019-12-15 14:33:12,634 INFO  [main] Search fields filled
+2019-12-15 14:33:12,752 INFO  [main] Going to main page
+2019-12-15 14:33:12,754 INFO  [main] Page object created
+2019-12-15 14:34:05,889 INFO  [main] Page object created
+2019-12-15 14:34:10,035 INFO  [main] Opening search page
+2019-12-15 14:34:12,483 INFO  [main] Page object created
+2019-12-15 14:36:06,774 INFO  [main] Page object created
+2019-12-15 14:36:10,463 INFO  [main] Opening search page
+2019-12-15 14:36:12,915 INFO  [main] Page object created
+2019-12-15 14:36:13,976 INFO  [main] Search fields filled
+2019-12-15 14:36:14,093 INFO  [main] Going to main page
+2019-12-15 14:36:14,094 INFO  [main] Page object created
+2019-12-15 14:36:17,745 INFO  [main] Hotels list found
+2019-12-15 14:36:19,857 INFO  [main] Main page opened
+2019-12-15 14:36:43,156 INFO  [main] Page object created
+2019-12-15 14:36:45,377 INFO  [main] Opening search page
+2019-12-15 14:36:48,043 INFO  [main] Page object created
+2019-12-15 14:36:49,093 INFO  [main] Search fields filled
+2019-12-15 14:36:49,200 INFO  [main] Going to main page
+2019-12-15 14:36:49,201 INFO  [main] Page object created
+2019-12-15 14:36:51,892 INFO  [main] Hotels list found
+2019-12-15 14:38:32,733 INFO  [main] Page object created
+2019-12-15 14:38:36,246 INFO  [main] Opening search page
+2019-12-15 14:38:38,738 INFO  [main] Page object created
+2019-12-15 14:38:39,795 INFO  [main] Search fields filled
+2019-12-15 14:38:52,063 INFO  [main] Page object created
+2019-12-15 14:38:55,565 INFO  [main] Opening search page
+2019-12-15 14:38:57,674 INFO  [main] Page object created
+2019-12-15 14:38:58,811 INFO  [main] Search fields filled
+2019-12-15 14:38:58,946 INFO  [main] Going to main page
+2019-12-15 14:38:58,947 INFO  [main] Page object created
+2019-12-15 14:39:01,513 INFO  [main] Hotels list found
+2019-12-15 14:39:53,876 INFO  [main] Page object created
+2019-12-15 14:39:57,410 INFO  [main] Opening search page
+2019-12-15 14:39:58,427 INFO  [main] Search fields filled
+2019-12-15 14:40:00,875 INFO  [main] Going to main page
+2019-12-15 14:40:00,876 INFO  [main] Page object created
+2019-12-15 14:40:01,230 INFO  [main] Hotels list found
+2019-12-15 14:40:31,377 INFO  [main] Page object created
+2019-12-15 14:40:34,907 INFO  [main] Opening search page
+2019-12-15 14:41:34,142 INFO  [main] Page object created
+2019-12-15 14:41:37,588 INFO  [main] Opening search page
+2019-12-15 14:41:39,924 INFO  [main] Search fields filled
+2019-12-15 14:41:40,078 INFO  [main] Going to main page
+2019-12-15 14:41:40,080 INFO  [main] Page object created
+2019-12-15 14:41:43,361 INFO  [main] Hotels list found
+2019-12-15 14:44:11,444 INFO  [main] Page object created
+2019-12-15 14:44:15,219 INFO  [main] Opening search page
+2019-12-15 14:44:16,231 INFO  [main] Search fields filled
+2019-12-15 14:44:16,231 INFO  [main] Searching for error message

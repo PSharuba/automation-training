@@ -10,11 +10,12 @@ public class DriverSingleton {
     private static WebDriver driver;
 
 
-    private DriverSingleton(){}
+    private DriverSingleton() {
+    }
 
-    public static WebDriver getDriver(){
-        if (null == driver){
-            switch (System.getProperty("browser")){
+    public static WebDriver getDriver() {
+        if (null == driver) {
+            /*switch (System.getProperty("browser")){
                 case "firefox": {
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
@@ -23,13 +24,15 @@ public class DriverSingleton {
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                 }
-            }
+            }*/
+            WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver();
             driver.manage().window().maximize();
         }
         return driver;
     }
 
-    public static void closeDriver(){
+    public static void closeDriver() {
         driver.quit();
         driver = null;
     }

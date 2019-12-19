@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SearchPage extends AbstractPage {
 
@@ -17,9 +19,14 @@ public class SearchPage extends AbstractPage {
     private final By SIGN_IN_BUTTON_LOCATOR = By.xpath("//*[@id='header-sign-in']");
     private final By ACCOUNT_BUTTON_LOCATOR = By.xpath("//*[@class='nav-section-toggle']/label");
     private final By USD_LOCATOR = By.xpath("//a[@data-currency='USD']");
+    private final By ERROR_LOCATOR = By.xpath("//*[@id='widget-overlay-title-1']");
+    private final By ALERT_LOCATOR = By.xpath("//div[@class='form-error']/span");
 
     @FindBy(xpath = "//*[@id='hdr-deals']")
     private WebElement specialOffersLink;
+
+    @FindBy(xpath = "//*[@class='widget-query-sub-title']")
+    private WebElement searchHeader;
 
     @FindBy(xpath = "//*[@id='header-toggle-currency']")
     private WebElement moneyChangeButton;
@@ -33,7 +40,7 @@ public class SearchPage extends AbstractPage {
     @FindBy(xpath = "//*[@id='qf-0q-localised-check-out']")
     private WebElement dateToLeaveField;
 
-    @FindBy(xpath = "//button[contains(text(), 'Поиск')]")
+    @FindBy(xpath = "//*[@id='hds-marquee']/div[2]/div[1]/div/form/div[4]/button")
     private WebElement searchButton;
 
 
@@ -48,10 +55,14 @@ public class SearchPage extends AbstractPage {
     }
 
     public SearchPage enterDataToSearchFor(SearchQuery searchData) {
+        citySearchField.clear();
         citySearchField.sendKeys(searchData.getCity());
-        driver.findElement(By.xpath("//*[@id='hds-marquee']")).click();
+        searchHeader.click();
+        dateToEnterField.clear();
         dateToEnterField.sendKeys(searchData.getDateToEnterHotel());
+        dateToLeaveField.clear();
         dateToLeaveField.sendKeys(searchData.getDateToLeaveHotel());
+        searchHeader.click();
         logger.info("Search fields filled");
         return this;
     }
@@ -69,13 +80,24 @@ public class SearchPage extends AbstractPage {
 
     public SearchPage changeMoneyToUSD() {
         moneyChangeButton.click();
-        driver.findElement(USD_LOCATOR).click();
+        new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS).until(ExpectedConditions.presenceOfElementLocated(USD_LOCATOR)).click();
         return this;
+    }
+
+    public String getDateAlertMessage() {
+        searchButton.click();
+        return new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
+                .until(ExpectedConditions.presenceOfElementLocated(ALERT_LOCATOR))
+                .findElement(ALERT_LOCATOR).getText();
     }
 
     public String getErrorMessage() {
         logger.info("Searching for error message");
-        return driver.findElement(By.xpath("//*[@id='widget-overlay-title-1']")).getText();
+        searchButton.click();
+        WebElement error = new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
+                .until(ExpectedConditions.presenceOfElementLocated(ERROR_LOCATOR))
+                .findElement(ERROR_LOCATOR);
+        return error.getText();
     }
 
     @Override

@@ -16,7 +16,9 @@ import static org.testng.Assert.assertTrue;
 public class SearchTests extends CommonConditions {
     private static final int RANDOM_CITY_NAME_LENGTH = 20;
     private static final String EXPECTED_ERROR_MESSAGE_PREFIX = "К сожалению, нам не удалось найти ";
+    private static final String EXPECTED_ALERT_MESSAGE = "Указана дата заезда раньше сегодняшнего дня";
 
+    //+
     @Test
     public void searchForRandomStringGivesError() {
         String randomCityName = StringUtils.getRandomString(RANDOM_CITY_NAME_LENGTH);
@@ -27,9 +29,10 @@ public class SearchTests extends CommonConditions {
                 .enterDataToSearchFor(searchQuery)
                 .getErrorMessage();
 
-        assertThat(textOfReceivedError, is(equalTo(EXPECTED_ERROR_MESSAGE_PREFIX + randomCityName)));
+        assertThat(textOfReceivedError, containsString(randomCityName));
     }
 
+    // +
     @Test
     public void searchForExistingCityGivesResult() {
         SearchQuery searchQuery = SearchQueryCreator.withCredentialsFromProperty(ExistingCities.MINSK.name());
@@ -41,6 +44,7 @@ public class SearchTests extends CommonConditions {
         assertThat(0, is(lessThan(totalFoundResultsNumber)));
     }
 
+    // +
     @Test
     public void mustBeAtLeastOneRoomForTomorrow() {
         SearchQuery searchQuery = SearchQueryCreator.withCredentialsFromProperty(DateService.getNextDayDate(),
@@ -53,6 +57,7 @@ public class SearchTests extends CommonConditions {
         assertThat(0, is(lessThan(totalAvailableResultsNumber)));
     }
 
+    // +
     @Test
     public void mustBeAtLeastOneFlatFound() {
         SearchQuery searchQuery = SearchQueryCreator.withCredentialsFromProperty();
@@ -65,6 +70,7 @@ public class SearchTests extends CommonConditions {
         assertThat(0, is(lessThan(totalAvailableFlatsFound)));
     }
 
+    // +
     @Test
     public void mustBeAtLeastOneFiveStarRoomWithWifiFound() {
         SearchQuery searchQuery = SearchQueryCreator.withCredentialsFromProperty();
@@ -78,18 +84,19 @@ public class SearchTests extends CommonConditions {
         assertThat(0, is(lessThan(totalAvailableRoomsFound)));
     }
 
+    // +
     @Test
     public void mustNotBeAnyRoomForLastWeek() {
         SearchQuery searchQuery = SearchQueryCreator.withCredentialsFromProperty(DateService.getLastWeekDate(),
                 DateService.getNextWeekDate());
-        int totalAvailableResultsNumber = new SearchPage()
+        String alertMessage = new SearchPage()
                 .openPage()
                 .enterDataToSearchFor(searchQuery)
-                .clickSearchButton()
-                .findNumberOfAvailableHotels();
-        assertThat(totalAvailableResultsNumber, is(lessThanOrEqualTo(0)));
+                .getDateAlertMessage();
+        assertThat(alertMessage, is(equalTo(EXPECTED_ALERT_MESSAGE)));
     }
 
+    // +
     @Test
     public void searchInSpecialOffersMustFindAtLeastOneSpecialOffer() {
         SearchQuery searchQuery = SearchQueryCreator.withCredentialsFromProperty();
@@ -102,11 +109,13 @@ public class SearchTests extends CommonConditions {
         assertThat(0, is(lessThan(totalSpecialOffersFound)));
     }
 
+    // +
     @Test
     public void whenMoneyChangedToUsdPricesMustBeAtUsd() {
         SearchQuery searchQuery = SearchQueryCreator.withCredentialsFromProperty();
         String currencyOfPrices = new SearchPage()
                 .openPage()
+                .changeMoneyToUSD()
                 .enterDataToSearchFor(searchQuery)
                 .clickSearchButton()
                 .getPriceCurrency();

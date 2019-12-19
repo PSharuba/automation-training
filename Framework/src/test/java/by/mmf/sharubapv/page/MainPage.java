@@ -16,14 +16,14 @@ public class MainPage extends AbstractPage {
 
     private final By SIGN_IN_BUTTON_LOCATOR = By.xpath("//*[@id='header-sign-in']");
     private final By ACCOUNT_BUTTON_LOCATOR = By.xpath("//*[@class='nav-section-toggle']/label");
-    private final By HOTELS_LOCATOR = By.xpath("//li[contains(class(), 'hotel')]");
+    private final By HOTELS_LOCATOR = By.xpath("//li[@class='hotel']");
     private final By HOTEL_BUTTON_LOCATOR = By.xpath("//h3[contains(class(), 'p-name')]/a");
     private final By HOTEL_LIST_LOCATOR = By.xpath("//*[@id='listings']/ol");
-    private final By FIVE_STARS_LOCATOR = By.xpath("//*[@id=f-star-rating-5]");
+    private final By FIVE_STARS_LOCATOR = By.xpath("//*[@id='f-star-rating-5']");
     private final By FREE_WIFI_LOCATOR = By.xpath("//*[@id='f-popular-527']");
     private final By BOOK_HOTEL_BUTTON_LOCATOR = By.xpath("//a[@class='cta']");
     private final By FLAT_FILTER_LOCATOR = By.xpath("//*[@id='f-accid-15']");
-    private final By SPECIAL_DEAL_LOCATOR = By.xpath("//strong[@class='special-deal']");
+    private final By SPECIAL_DEAL_LOCATOR = By.xpath("//*[@class='special-deal-badge']");
     private final By PRICE_LOCATOR = By.xpath("//a[@class='price-link']/ins");
 
     @FindBy(xpath = "//*[@id='q-destination']")

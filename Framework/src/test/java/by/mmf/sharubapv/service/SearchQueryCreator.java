@@ -23,4 +23,8 @@ public class SearchQueryCreator {
     public static SearchQuery withCredentialsFromProperty(String dateIn, String dateOut) {
         return new SearchQuery(TestDataReader.getTestData(TESTDATA_QUERY_CITY), dateIn, dateOut);
     }
+
+    public static SearchQuery withCredentialsFromProperty(String searchCityName,String dateIn, String dateOut) {
+        return new SearchQuery(searchCityName, dateIn, dateOut);
+    }
 }
