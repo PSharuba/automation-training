@@ -15,6 +15,7 @@ public class DriverSingleton {
 
     public static WebDriver getDriver() {
         if (null == driver) {
+            /*System.out.println("Browser: "+System.getProperty("browser"));
             switch (System.getProperty("browser")) {
                 case "firefox": {
                     WebDriverManager.firefoxdriver().setup();
@@ -24,9 +25,9 @@ public class DriverSingleton {
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                 }
-            }
-            //WebDriverManager.chromedriver().setup();
-            //driver = new ChromeDriver();
+            }*/
+            WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver();
             driver.manage().window().maximize();
         }
         return driver;

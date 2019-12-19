@@ -73,6 +73,7 @@ public class SearchPage extends AbstractPage {
     }
 
     public MainPage clickSearchButton() {
+        searchHeader.click();
         searchButton.click();
         logger.info("Going to main page");
         return new MainPage();

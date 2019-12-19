@@ -9,49 +9,41 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">8</td><td class="num">26 111</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">8</td><td class="num">0</td><td class="num attn">1</td><td class="num">95 571</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="8">by.mmf.sharubapv.test.SearchTests</td><td><a href="#m0">mustBeAtLeastOneFiveStarRoomWithWifiFound</a></td><td rowspan="1">1576753408338</td><td rowspan="1">3</td></tr><tr class="failedeven"><td><a href="#m1">mustBeAtLeastOneFlatFound</a></td><td rowspan="1">1576753410689</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m2">mustBeAtLeastOneRoomForTomorrow</a></td><td rowspan="1">1576753412853</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m3">mustNotBeAnyRoomForLastWeek</a></td><td rowspan="1">1576753415029</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m4">searchForExistingCityGivesResult</a></td><td rowspan="1">1576753417204</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m5">searchForRandomStringGivesError</a></td><td rowspan="1">1576753419358</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m6">searchInSpecialOffersMustFindAtLeastOneSpecialOffer</a></td><td rowspan="1">1576753421569</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m7">whenMoneyChangedToUsdPricesMustBeAtUsd</a></td><td rowspan="1">1576753423728</td><td rowspan="1">0</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">by.mmf.sharubapv.test.SingleTest</td><td><a href="#m8">searchForRandomStringGivesError</a></td><td rowspan="1">1576753424683</td><td rowspan="1">7721</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">by.mmf.sharubapv.test.BookingTests</td><td><a href="#m0">oneCanBookRoomForTwoAdults</a></td><td rowspan="1">1576757589978</td><td rowspan="1">8447</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">by.mmf.sharubapv.test.SearchTests</td><td><a href="#m1">mustBeAtLeastOneFiveStarRoomWithWifiFound</a></td><td rowspan="1">1576757600746</td><td rowspan="1">8622</td></tr><tr class="passedeven"><td><a href="#m2">mustBeAtLeastOneFlatFound</a></td><td rowspan="1">1576757611202</td><td rowspan="1">9610</td></tr><tr class="passedeven"><td><a href="#m3">mustBeAtLeastOneRoomForTomorrow</a></td><td rowspan="1">1576757622650</td><td rowspan="1">8303</td></tr><tr class="passedeven"><td><a href="#m4">mustNotBeAnyRoomForLastWeek</a></td><td rowspan="1">1576757632791</td><td rowspan="1">4360</td></tr><tr class="passedeven"><td><a href="#m5">searchForExistingCityGivesResult</a></td><td rowspan="1">1576757638987</td><td rowspan="1">7980</td></tr><tr class="passedeven"><td><a href="#m6">searchForRandomStringGivesError</a></td><td rowspan="1">1576757648807</td><td rowspan="1">5871</td></tr><tr class="passedeven"><td><a href="#m7">searchInSpecialOffersMustFindAtLeastOneSpecialOffer</a></td><td rowspan="1">1576757656511</td><td rowspan="1">13796</td></tr><tr class="passedeven"><td><a href="#m8">whenMoneyChangedToUsdPricesMustBeAtUsd</a></td><td rowspan="1">1576757672165</td><td rowspan="1">10742</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">by.mmf.sharubapv.test.SearchTests#mustBeAtLeastOneFiveStarRoomWithWifiFound</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.ExceptionInInitializerError
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:11)
-	at by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneFiveStarRoomWithWifiFound(SearchTests.java:76)
-Caused by: java.lang.NullPointerException
-	at java.util.ResourceBundle$CacheKey.calculateHashCode(ResourceBundle.java:654)
-	at java.util.ResourceBundle$CacheKey.&lt;init&gt;(ResourceBundle.java:584)
-	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1333)
-	at java.util.ResourceBundle.getBundle(ResourceBundle.java:782)
-	at by.mmf.sharubapv.service.TestDataReader.&lt;clinit&gt;(TestDataReader.java:6)
-	... 32 more
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">by.mmf.sharubapv.test.SearchTests#mustBeAtLeastOneFlatFound</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:11)
-	at by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneFlatFound(SearchTests.java:63)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">by.mmf.sharubapv.test.SearchTests#mustBeAtLeastOneRoomForTomorrow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:23)
-	at by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneRoomForTomorrow(SearchTests.java:50)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">by.mmf.sharubapv.test.SearchTests#mustNotBeAnyRoomForLastWeek</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:23)
-	at by.mmf.sharubapv.test.SearchTests.mustNotBeAnyRoomForLastWeek(SearchTests.java:90)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">by.mmf.sharubapv.test.SearchTests#searchForExistingCityGivesResult</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:18)
-	at by.mmf.sharubapv.test.SearchTests.searchForExistingCityGivesResult(SearchTests.java:38)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">by.mmf.sharubapv.test.SearchTests#searchForRandomStringGivesError</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:18)
-	at by.mmf.sharubapv.test.SearchTests.searchForRandomStringGivesError(SearchTests.java:26)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">by.mmf.sharubapv.test.SearchTests#searchInSpecialOffersMustFindAtLeastOneSpecialOffer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:11)
-	at by.mmf.sharubapv.test.SearchTests.searchInSpecialOffersMustFindAtLeastOneSpecialOffer(SearchTests.java:102)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">by.mmf.sharubapv.test.SearchTests#whenMoneyChangedToUsdPricesMustBeAtUsd</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:11)
-	at by.mmf.sharubapv.test.SearchTests.whenMoneyChangedToUsdPricesMustBeAtUsd(SearchTests.java:115)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">by.mmf.sharubapv.test.SingleTest#searchForRandomStringGivesError</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">by.mmf.sharubapv.test.BookingTests#oneCanBookRoomForTwoAdults</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //h3[contains(class(), &apos;p-name&apos;)]/a because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//h3[contains(class(), &apos;p-name&apos;)]/a&apos; is not a valid XPath expression.
+  (Session info: chrome=79.0.3945.88)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;
+System info: host: &apos;DESKTOP-8NOJ2V6&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\mynam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:9790}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fe41350c64b449926e70f3ee599d4787
+*** Element info: {Using=xpath, value=//h3[contains(class(), &apos;p-name&apos;)]/a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at by.mmf.sharubapv.page.MainPage.goToHotelPage(MainPage.java:107)
+	at by.mmf.sharubapv.test.BookingTests.oneCanBookRoomForTwoAdults(BookingTests.java:24)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">by.mmf.sharubapv.test.SearchTests#mustBeAtLeastOneFiveStarRoomWithWifiFound</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">by.mmf.sharubapv.test.SearchTests#mustBeAtLeastOneFlatFound</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">by.mmf.sharubapv.test.SearchTests#mustBeAtLeastOneRoomForTomorrow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">by.mmf.sharubapv.test.SearchTests#mustNotBeAnyRoomForLastWeek</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">by.mmf.sharubapv.test.SearchTests#searchForExistingCityGivesResult</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">by.mmf.sharubapv.test.SearchTests#searchForRandomStringGivesError</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">by.mmf.sharubapv.test.SearchTests#searchInSpecialOffersMustFindAtLeastOneSpecialOffer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">by.mmf.sharubapv.test.SearchTests#whenMoneyChangedToUsdPricesMustBeAtUsd</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

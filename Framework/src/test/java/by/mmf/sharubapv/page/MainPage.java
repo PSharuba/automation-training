@@ -17,7 +17,7 @@ public class MainPage extends AbstractPage {
     private final By SIGN_IN_BUTTON_LOCATOR = By.xpath("//*[@id='header-sign-in']");
     private final By ACCOUNT_BUTTON_LOCATOR = By.xpath("//*[@class='nav-section-toggle']/label");
     private final By HOTELS_LOCATOR = By.xpath("//li[@class='hotel']");
-    private final By HOTEL_BUTTON_LOCATOR = By.xpath("//h3[contains(class(), 'p-name')]/a");
+    private final By HOTEL_BUTTON_LOCATOR = By.xpath("//h3[@class='p-name']/a");
     private final By HOTEL_LIST_LOCATOR = By.xpath("//*[@id='listings']/ol");
     private final By FIVE_STARS_LOCATOR = By.xpath("//*[@id='f-star-rating-5']");
     private final By FREE_WIFI_LOCATOR = By.xpath("//*[@id='f-popular-527']");

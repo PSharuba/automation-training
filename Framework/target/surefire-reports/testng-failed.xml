@@ -3,20 +3,13 @@
 <suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
   <test thread-count="1" verbose="0" name="Surefire test(failed)">
     <classes>
-      <class name="by.mmf.sharubapv.test.SearchTests">
+      <class name="by.mmf.sharubapv.test.BookingTests">
         <methods>
-          <include name="searchForRandomStringGivesError"/>
-          <include name="mustBeAtLeastOneRoomForTomorrow"/>
-          <include name="whenMoneyChangedToUsdPricesMustBeAtUsd"/>
           <include name="setUp"/>
-          <include name="searchForExistingCityGivesResult"/>
-          <include name="searchInSpecialOffersMustFindAtLeastOneSpecialOffer"/>
+          <include name="oneCanBookRoomForTwoAdults"/>
           <include name="stopBrowser"/>
-          <include name="mustBeAtLeastOneFiveStarRoomWithWifiFound"/>
-          <include name="mustBeAtLeastOneFlatFound"/>
-          <include name="mustNotBeAnyRoomForLastWeek"/>
         </methods>
-      </class> <!-- by.mmf.sharubapv.test.SearchTests -->
+      </class> <!-- by.mmf.sharubapv.test.BookingTests -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

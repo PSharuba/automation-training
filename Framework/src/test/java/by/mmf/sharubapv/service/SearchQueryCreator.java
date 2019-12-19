@@ -1,6 +1,7 @@
 package by.mmf.sharubapv.service;
 
 import by.mmf.sharubapv.model.SearchQuery;
+import by.mmf.sharubapv.service.TestDataReader;
 
 public class SearchQueryCreator {
     public static final String TESTDATA_QUERY_CITY = "testdata.query.city";
@@ -23,7 +24,7 @@ public class SearchQueryCreator {
         return new SearchQuery(TestDataReader.getTestData(TESTDATA_QUERY_CITY), dateIn, dateOut);
     }
 
-    public static SearchQuery withCredentialsFromProperty(String searchCityName,String dateIn, String dateOut) {
+    public static SearchQuery withCredentialsFromProperty(String searchCityName, String dateIn, String dateOut) {
         return new SearchQuery(searchCityName, dateIn, dateOut);
     }
 }

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/8/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Dec 19 14:03:26 MSK 2019</td>
+<td>Started on:</td><td>Thu Dec 19 15:13:07 MSK 2019</td>
 </tr>
-<tr><td>Total time:</td><td>26 seconds (26111 ms)</td>
+<tr><td>Total time:</td><td>95 seconds (95571 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,112 +75,58 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneFiveStarRoomWithWifiFound()'><b>mustBeAtLeastOneFiveStarRoomWithWifiFound</b><br>Test class: by.mmf.sharubapv.test.SearchTests</td>
-<td><div><pre>java.lang.ExceptionInInitializerError
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:11)
-	at by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneFiveStarRoomWithWifiFound(SearchTests.java:76)
-Caused by: java.lang.NullPointerException
-	at java.util.ResourceBundle$CacheKey.calculateHashCode(ResourceBundle.java:654)
-	at java.util.ResourceBundle$CacheKey.&lt;init&gt;(ResourceBundle.java:584)
-	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1333)
-	at java.util.ResourceBundle.getBundle(ResourceBundle.java:782)
-	at by.mmf.sharubapv.service.TestDataReader.&lt;clinit&gt;(TestDataReader.java:6)
-	... 32 more
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1943855334", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1943855334'><pre>java.lang.ExceptionInInitializerError
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:11)
-	at by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneFiveStarRoomWithWifiFound(SearchTests.java:76)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-Caused by: java.lang.NullPointerException
-	at java.util.ResourceBundle$CacheKey.calculateHashCode(ResourceBundle.java:654)
-	at java.util.ResourceBundle$CacheKey.&lt;init&gt;(ResourceBundle.java:584)
-	at java.util.ResourceBundle.getBundleImpl(ResourceBundle.java:1333)
-	at java.util.ResourceBundle.getBundle(ResourceBundle.java:782)
-	at by.mmf.sharubapv.service.TestDataReader.&lt;clinit&gt;(TestDataReader.java:6)
-	... 32 more
-</pre></div></td>
-<td>0</td>
-<td>by.mmf.sharubapv.test.SearchTests@47f6473</td></tr>
-<tr>
-<td title='by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneFlatFound()'><b>mustBeAtLeastOneFlatFound</b><br>Test class: by.mmf.sharubapv.test.SearchTests</td>
-<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:11)
-	at by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneFlatFound(SearchTests.java:63)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace93798665", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace93798665'><pre>java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:11)
-	at by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneFlatFound(SearchTests.java:63)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>0</td>
-<td>by.mmf.sharubapv.test.SearchTests@47f6473</td></tr>
-<tr>
-<td title='by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneRoomForTomorrow()'><b>mustBeAtLeastOneRoomForTomorrow</b><br>Test class: by.mmf.sharubapv.test.SearchTests</td>
-<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:23)
-	at by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneRoomForTomorrow(SearchTests.java:50)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1491522744", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1491522744'><pre>java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:23)
-	at by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneRoomForTomorrow(SearchTests.java:50)
+<td title='by.mmf.sharubapv.test.BookingTests.oneCanBookRoomForTwoAdults()'><b>oneCanBookRoomForTwoAdults</b><br>Test class: by.mmf.sharubapv.test.BookingTests</td>
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //h3[contains(class(), &apos;p-name&apos;)]/a because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//h3[contains(class(), &apos;p-name&apos;)]/a&apos; is not a valid XPath expression.
+  (Session info: chrome=79.0.3945.88)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;
+System info: host: &apos;DESKTOP-8NOJ2V6&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\mynam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:9790}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fe41350c64b449926e70f3ee599d4787
+*** Element info: {Using=xpath, value=//h3[contains(class(), &apos;p-name&apos;)]/a}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at by.mmf.sharubapv.page.MainPage.goToHotelPage(MainPage.java:107)
+	at by.mmf.sharubapv.test.BookingTests.oneCanBookRoomForTwoAdults(BookingTests.java:24)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace371976476", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace371976476'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //h3[contains(class(), &apos;p-name&apos;)]/a because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//h3[contains(class(), &apos;p-name&apos;)]/a&apos; is not a valid XPath expression.
+  (Session info: chrome=79.0.3945.88)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;
+System info: host: &apos;DESKTOP-8NOJ2V6&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\mynam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:9790}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fe41350c64b449926e70f3ee599d4787
+*** Element info: {Using=xpath, value=//h3[contains(class(), &apos;p-name&apos;)]/a}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:185)
+	at org.openqa.selenium.remote.RemoteWebElement.findElementByXPath(RemoteWebElement.java:261)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebElement.findElement(RemoteWebElement.java:181)
+	at by.mmf.sharubapv.page.MainPage.goToHotelPage(MainPage.java:107)
+	at by.mmf.sharubapv.test.BookingTests.oneCanBookRoomForTwoAdults(BookingTests.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -212,218 +158,8 @@ Caused by: java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 </pre></div></td>
-<td>0</td>
-<td>by.mmf.sharubapv.test.SearchTests@47f6473</td></tr>
-<tr>
-<td title='by.mmf.sharubapv.test.SearchTests.mustNotBeAnyRoomForLastWeek()'><b>mustNotBeAnyRoomForLastWeek</b><br>Test class: by.mmf.sharubapv.test.SearchTests</td>
-<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:23)
-	at by.mmf.sharubapv.test.SearchTests.mustNotBeAnyRoomForLastWeek(SearchTests.java:90)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1396385390", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1396385390'><pre>java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:23)
-	at by.mmf.sharubapv.test.SearchTests.mustNotBeAnyRoomForLastWeek(SearchTests.java:90)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>0</td>
-<td>by.mmf.sharubapv.test.SearchTests@47f6473</td></tr>
-<tr>
-<td title='by.mmf.sharubapv.test.SearchTests.searchForExistingCityGivesResult()'><b>searchForExistingCityGivesResult</b><br>Test class: by.mmf.sharubapv.test.SearchTests</td>
-<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:18)
-	at by.mmf.sharubapv.test.SearchTests.searchForExistingCityGivesResult(SearchTests.java:38)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace791408866", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace791408866'><pre>java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:18)
-	at by.mmf.sharubapv.test.SearchTests.searchForExistingCityGivesResult(SearchTests.java:38)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>0</td>
-<td>by.mmf.sharubapv.test.SearchTests@47f6473</td></tr>
-<tr>
-<td title='by.mmf.sharubapv.test.SearchTests.searchForRandomStringGivesError()'><b>searchForRandomStringGivesError</b><br>Test class: by.mmf.sharubapv.test.SearchTests</td>
-<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:18)
-	at by.mmf.sharubapv.test.SearchTests.searchForRandomStringGivesError(SearchTests.java:26)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1466558382", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1466558382'><pre>java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:18)
-	at by.mmf.sharubapv.test.SearchTests.searchForRandomStringGivesError(SearchTests.java:26)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>0</td>
-<td>by.mmf.sharubapv.test.SearchTests@47f6473</td></tr>
-<tr>
-<td title='by.mmf.sharubapv.test.SearchTests.searchInSpecialOffersMustFindAtLeastOneSpecialOffer()'><b>searchInSpecialOffersMustFindAtLeastOneSpecialOffer</b><br>Test class: by.mmf.sharubapv.test.SearchTests</td>
-<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:11)
-	at by.mmf.sharubapv.test.SearchTests.searchInSpecialOffersMustFindAtLeastOneSpecialOffer(SearchTests.java:102)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace242408359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace242408359'><pre>java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:11)
-	at by.mmf.sharubapv.test.SearchTests.searchInSpecialOffersMustFindAtLeastOneSpecialOffer(SearchTests.java:102)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>0</td>
-<td>by.mmf.sharubapv.test.SearchTests@47f6473</td></tr>
-<tr>
-<td title='by.mmf.sharubapv.test.SearchTests.whenMoneyChangedToUsdPricesMustBeAtUsd()'><b>whenMoneyChangedToUsdPricesMustBeAtUsd</b><br>Test class: by.mmf.sharubapv.test.SearchTests</td>
-<td><div><pre>java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:11)
-	at by.mmf.sharubapv.test.SearchTests.whenMoneyChangedToUsdPricesMustBeAtUsd(SearchTests.java:115)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1280443567", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1280443567'><pre>java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
-	at by.mmf.sharubapv.service.SearchQueryCreator.withCredentialsFromProperty(SearchQueryCreator.java:11)
-	at by.mmf.sharubapv.test.SearchTests.whenMoneyChangedToUsdPricesMustBeAtUsd(SearchTests.java:115)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></div></td>
-<td>0</td>
-<td>by.mmf.sharubapv.test.SearchTests@47f6473</td></tr>
+<td>8</td>
+<td>by.mmf.sharubapv.test.BookingTests@47f6473</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -433,10 +169,45 @@ Caused by: java.lang.NullPointerException
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='by.mmf.sharubapv.test.SingleTest.searchForRandomStringGivesError()'><b>searchForRandomStringGivesError</b><br>Test class: by.mmf.sharubapv.test.SingleTest</td>
+<td title='by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneFiveStarRoomWithWifiFound()'><b>mustBeAtLeastOneFiveStarRoomWithWifiFound</b><br>Test class: by.mmf.sharubapv.test.SearchTests</td>
+<td></td>
+<td>8</td>
+<td>by.mmf.sharubapv.test.SearchTests@15975490</td></tr>
+<tr>
+<td title='by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneFlatFound()'><b>mustBeAtLeastOneFlatFound</b><br>Test class: by.mmf.sharubapv.test.SearchTests</td>
+<td></td>
+<td>9</td>
+<td>by.mmf.sharubapv.test.SearchTests@15975490</td></tr>
+<tr>
+<td title='by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneRoomForTomorrow()'><b>mustBeAtLeastOneRoomForTomorrow</b><br>Test class: by.mmf.sharubapv.test.SearchTests</td>
+<td></td>
+<td>8</td>
+<td>by.mmf.sharubapv.test.SearchTests@15975490</td></tr>
+<tr>
+<td title='by.mmf.sharubapv.test.SearchTests.mustNotBeAnyRoomForLastWeek()'><b>mustNotBeAnyRoomForLastWeek</b><br>Test class: by.mmf.sharubapv.test.SearchTests</td>
+<td></td>
+<td>4</td>
+<td>by.mmf.sharubapv.test.SearchTests@15975490</td></tr>
+<tr>
+<td title='by.mmf.sharubapv.test.SearchTests.searchForExistingCityGivesResult()'><b>searchForExistingCityGivesResult</b><br>Test class: by.mmf.sharubapv.test.SearchTests</td>
 <td></td>
 <td>7</td>
-<td>by.mmf.sharubapv.test.SingleTest@15975490</td></tr>
+<td>by.mmf.sharubapv.test.SearchTests@15975490</td></tr>
+<tr>
+<td title='by.mmf.sharubapv.test.SearchTests.searchForRandomStringGivesError()'><b>searchForRandomStringGivesError</b><br>Test class: by.mmf.sharubapv.test.SearchTests</td>
+<td></td>
+<td>5</td>
+<td>by.mmf.sharubapv.test.SearchTests@15975490</td></tr>
+<tr>
+<td title='by.mmf.sharubapv.test.SearchTests.searchInSpecialOffersMustFindAtLeastOneSpecialOffer()'><b>searchInSpecialOffersMustFindAtLeastOneSpecialOffer</b><br>Test class: by.mmf.sharubapv.test.SearchTests</td>
+<td></td>
+<td>13</td>
+<td>by.mmf.sharubapv.test.SearchTests@15975490</td></tr>
+<tr>
+<td title='by.mmf.sharubapv.test.SearchTests.whenMoneyChangedToUsdPricesMustBeAtUsd()'><b>whenMoneyChangedToUsdPricesMustBeAtUsd</b><br>Test class: by.mmf.sharubapv.test.SearchTests</td>
+<td></td>
+<td>10</td>
+<td>by.mmf.sharubapv.test.SearchTests@15975490</td></tr>
 </table><p>
 </body>
 </html>

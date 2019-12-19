@@ -21,6 +21,7 @@ public class HotelPage extends AbstractPage {
     private final By ONLINE_PAYMENT_LOCATOR = By.xpath("//*[@id='pay-now-etp-form']/button");
     private final String ROOM_BOOK_BUTTON_LOCATOR_PREFIX = "//*[@id='rooms-and-rates.room-";
     private final String ROOM_BOOK_BUTTON_LOCATOR_POSTFIX = "-rateplan-1']/button";
+    private final String ROOM_LOCATOR = "//li";
 
     @FindBy(xpath = "//*[@id='header-toggle-currency']")
     private WebElement moneyChangeButton;
@@ -34,15 +35,15 @@ public class HotelPage extends AbstractPage {
     @FindBy(xpath = "//*[@id='q-localised-check-out']")
     private WebElement dateToLeaveField;
 
-    @FindBy(xpath = "//button[contains(text(), 'Найти')]")
-    private WebElement searchButton;
+    //@FindBy(xpath = "//button[contains(text(), 'Найти')]")
+    //private WebElement searchButton;
 
-    @FindBy(xpath = "//ul[contains(class(), 'rooms')]")
+    @FindBy(xpath = "//ul[@class='rooms']")
     private WebElement roomsList;
 
     private WebElement[] rooms;
 
-    private final By linkRoomsListLocator = By.xpath("//ul[contains(class(), 'rooms')]");
+    private final By linkRoomsListLocator = By.xpath("//ul[@class='rooms']");
 
     //private final By linkWidgetPaymentMethodLocator = By.xpath("//div[contains(class(), 'widget-overlay')]");
 
@@ -55,7 +56,7 @@ public class HotelPage extends AbstractPage {
     public HotelPage getRoomsList() {
         rooms = new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
                 .until(ExpectedConditions.presenceOfElementLocated(linkRoomsListLocator))
-                .findElements(By.xpath("//li[contains(class(), 'room')]")).toArray(new WebElement[0]);
+                .findElements(By.xpath(ROOM_LOCATOR)).toArray(new WebElement[0]);
         logger.info("Got rooms list");
         return this;
     }
@@ -64,13 +65,14 @@ public class HotelPage extends AbstractPage {
         WebElement bookRoomLinkButton;
         if (roomNumberInList < rooms.length) {
             bookRoomLinkButton = rooms[roomNumberInList].
-                    findElement(By.xpath(ROOM_BOOK_BUTTON_LOCATOR_PREFIX + (roomNumberInList - 1) + ROOM_BOOK_BUTTON_LOCATOR_POSTFIX));
+                    findElement(By.xpath(ROOM_BOOK_BUTTON_LOCATOR_PREFIX + (roomNumberInList+1) + ROOM_BOOK_BUTTON_LOCATOR_POSTFIX));
             logger.info("Got button for chosen room");
         } else {
             bookRoomLinkButton = rooms[0].
-                    findElement(By.xpath(ROOM_BOOK_BUTTON_LOCATOR_PREFIX + 0 + ROOM_BOOK_BUTTON_LOCATOR_POSTFIX));
+                    findElement(By.xpath(ROOM_BOOK_BUTTON_LOCATOR_PREFIX + 1 + ROOM_BOOK_BUTTON_LOCATOR_POSTFIX));
             logger.warn("No such room found. Taking first room");
         }
+        bookRoomLinkButton.click();
         try {
             driver.findElement(PAYMENT_MESSAGE_LOCATOR);
             driver.findElement(ONLINE_PAYMENT_LOCATOR).click();

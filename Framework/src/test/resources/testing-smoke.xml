@@ -3,7 +3,7 @@
 <suite name="Smoke" verbose="1">
     <test name="Booking">
         <classes>
-            <class name="by.mmf.sharubapv.test.SingleTest"/>
+            <class name="by.mmf.sharubapv.test.SearchTests"/>
         </classes>
     </test>
 </suite>

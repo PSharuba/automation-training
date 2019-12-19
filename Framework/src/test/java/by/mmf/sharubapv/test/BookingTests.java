@@ -12,7 +12,7 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
 
 public class BookingTests extends CommonConditions {
-    /*@Test
+    @Test
     public void oneCanBookRoomForTwoAdults() {
         Guest firstGuest = GuestCreator.withCredentialsFromProperty(0);
         Guest secondGuest = GuestCreator.withCredentialsFromProperty(1);
@@ -22,9 +22,10 @@ public class BookingTests extends CommonConditions {
                 .enterDataToSearchFor(searchQuery)
                 .clickSearchButton()
                 .goToHotelPage(0)
+                .openPage()
                 .goToRoomBookPage(0)
                 .bookRoom(firstGuest, secondGuest)
                 .isBookingComplete();
         assertThat(isSearchComplete, is(equalTo(true)));
-    }*/
+    }
 }

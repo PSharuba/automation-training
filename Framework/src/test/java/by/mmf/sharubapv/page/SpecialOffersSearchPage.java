@@ -49,6 +49,7 @@ public class SpecialOffersSearchPage extends AbstractPage {
     }
 
     public MainPage clickSearchButton() {
+        searchForm.findElement(SEARCH_HEADER_LOCATOR).click();
         searchForm.findElement(SEARCH_BUTTON_LOCATOR).click();
         logger.info("Going to main page");
         return new MainPage();
