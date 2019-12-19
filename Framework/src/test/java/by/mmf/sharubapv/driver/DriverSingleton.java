@@ -17,7 +17,10 @@ public class DriverSingleton {
 
     public static WebDriver getDriver() {
         if (null == driver) {
+            System.out.println("Properties: ");
             System.out.println("Browser: " + System.getProperty("browser"));
+            System.out.println("Environment: " + System.getProperty("environment"));
+            System.out.println("XML: " + System.getProperty("surefire.suitexml"));
             switch (System.getProperty("browser")) {
                 case "firefox": {
                     WebDriverManager.firefoxdriver().setup();
