@@ -31,6 +31,7 @@ public class DriverSingleton {
                     chrome.setJavascriptEnabled(true);
                     option.setCapability(ChromeOptions.CAPABILITY, option);
                     driver = new ChromeDriver();
+                    //
                 }
             }
             driver.manage().window().maximize();
