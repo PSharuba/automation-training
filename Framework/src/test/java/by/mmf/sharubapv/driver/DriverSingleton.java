@@ -25,13 +25,12 @@ public class DriverSingleton {
                 }
                 default: {
                     WebDriverManager.chromedriver().setup();
-                    ChromeOptions option = new ChromeOptions();
+                    /*ChromeOptions option = new ChromeOptions();
                     option.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
                     DesiredCapabilities chrome = DesiredCapabilities.chrome();
                     chrome.setJavascriptEnabled(true);
-                    option.setCapability(ChromeOptions.CAPABILITY, option);
+                    option.setCapability(ChromeOptions.CAPABILITY, option);*/
                     driver = new ChromeDriver();
-                    //
                 }
             }
             driver.manage().window().maximize();

@@ -10,6 +10,13 @@
           <include name="stopBrowser"/>
         </methods>
       </class> <!-- by.mmf.sharubapv.test.BookingTests -->
+      <class name="by.mmf.sharubapv.test.SearchTests">
+        <methods>
+          <include name="whenMoneyChangedToUsdPricesMustBeAtUsd"/>
+          <include name="setUp"/>
+          <include name="stopBrowser"/>
+        </methods>
+      </class> <!-- by.mmf.sharubapv.test.SearchTests -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

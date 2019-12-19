@@ -10,7 +10,6 @@ by\mmf\sharubapv\page\SearchPage.class
 by\mmf\sharubapv\page\AbstractPage.class
 by\mmf\sharubapv\test\BookingTests.class
 by\mmf\sharubapv\service\DateService.class
-by\mmf\sharubapv\test\SingleTest.class
 by\mmf\sharubapv\util\TestListener.class
 by\mmf\sharubapv\test\SearchTests.class
 by\mmf\sharubapv\util\ExistingCities.class
