@@ -1,6 +1,5 @@
 package by.mmf.sharubapv.service;
 
-import by.mmf.sharubapv.model.Guest;
 import by.mmf.sharubapv.model.SearchQuery;
 
 public class SearchQueryCreator {

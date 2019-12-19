@@ -1,0 +1,38 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 26.811 s <<< FAILURE! - in TestSuite
+mustBeAtLeastOneFiveStarRoomWithWifiFound(by.mmf.sharubapv.test.SearchTests)  Time elapsed: 0.523 s  <<< FAILURE!
+java.lang.ExceptionInInitializerError
+	at by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneFiveStarRoomWithWifiFound(SearchTests.java:76)
+Caused by: java.lang.NullPointerException
+	at by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneFiveStarRoomWithWifiFound(SearchTests.java:76)
+
+mustBeAtLeastOneFlatFound(by.mmf.sharubapv.test.SearchTests)  Time elapsed: 0.355 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
+	at by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneFlatFound(SearchTests.java:63)
+
+mustBeAtLeastOneRoomForTomorrow(by.mmf.sharubapv.test.SearchTests)  Time elapsed: 0.355 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
+	at by.mmf.sharubapv.test.SearchTests.mustBeAtLeastOneRoomForTomorrow(SearchTests.java:50)
+
+mustNotBeAnyRoomForLastWeek(by.mmf.sharubapv.test.SearchTests)  Time elapsed: 0.363 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
+	at by.mmf.sharubapv.test.SearchTests.mustNotBeAnyRoomForLastWeek(SearchTests.java:90)
+
+searchForExistingCityGivesResult(by.mmf.sharubapv.test.SearchTests)  Time elapsed: 0.347 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
+	at by.mmf.sharubapv.test.SearchTests.searchForExistingCityGivesResult(SearchTests.java:38)
+
+searchForRandomStringGivesError(by.mmf.sharubapv.test.SearchTests)  Time elapsed: 0.392 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
+	at by.mmf.sharubapv.test.SearchTests.searchForRandomStringGivesError(SearchTests.java:26)
+
+searchInSpecialOffersMustFindAtLeastOneSpecialOffer(by.mmf.sharubapv.test.SearchTests)  Time elapsed: 0.35 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
+	at by.mmf.sharubapv.test.SearchTests.searchInSpecialOffersMustFindAtLeastOneSpecialOffer(SearchTests.java:102)
+
+whenMoneyChangedToUsdPricesMustBeAtUsd(by.mmf.sharubapv.test.SearchTests)  Time elapsed: 0.364 s  <<< FAILURE!
+java.lang.NoClassDefFoundError: Could not initialize class by.mmf.sharubapv.service.TestDataReader
+	at by.mmf.sharubapv.test.SearchTests.whenMoneyChangedToUsdPricesMustBeAtUsd(SearchTests.java:115)
+

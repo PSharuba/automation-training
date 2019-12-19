@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="by.mmf.sharubapv.test.SearchTests">
+        <methods>
+          <include name="searchForRandomStringGivesError"/>
+          <include name="mustBeAtLeastOneRoomForTomorrow"/>
+          <include name="whenMoneyChangedToUsdPricesMustBeAtUsd"/>
+          <include name="setUp"/>
+          <include name="searchForExistingCityGivesResult"/>
+          <include name="searchInSpecialOffersMustFindAtLeastOneSpecialOffer"/>
+          <include name="stopBrowser"/>
+          <include name="mustBeAtLeastOneFiveStarRoomWithWifiFound"/>
+          <include name="mustBeAtLeastOneFlatFound"/>
+          <include name="mustNotBeAnyRoomForLastWeek"/>
+        </methods>
+      </class> <!-- by.mmf.sharubapv.test.SearchTests -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

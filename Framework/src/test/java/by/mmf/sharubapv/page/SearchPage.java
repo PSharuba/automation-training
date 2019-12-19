@@ -97,6 +97,7 @@ public class SearchPage extends AbstractPage {
         WebElement error = new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
                 .until(ExpectedConditions.presenceOfElementLocated(ERROR_LOCATOR))
                 .findElement(ERROR_LOCATOR);
+        logger.info("Found error: " + error.getText());
         return error.getText();
     }
 
