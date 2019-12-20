@@ -27,7 +27,7 @@ public class DriverSingleton {
                     driver = new FirefoxDriver();
                 }
                 default: {
-                    WebDriverManager.chromedriver().setup();
+                    WebDriverManager.chromedriver().version("79.0.3945.88").setup();
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("start-maximized"); // open Browser in maximized mode
                     options.addArguments("disable-infobars"); // disabling infobars
