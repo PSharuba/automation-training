@@ -21,6 +21,7 @@ public class SearchTests extends CommonConditions {
     //+
     @Test
     public void searchForRandomStringGivesError() {
+        logger.info("Started test.");
         String randomCityName = StringUtils.getRandomString(RANDOM_CITY_NAME_LENGTH);
 
         SearchQuery searchQuery = SearchQueryCreator.withCredentialsFromProperty(randomCityName);
@@ -35,6 +36,7 @@ public class SearchTests extends CommonConditions {
     // +
     @Test
     public void searchForExistingCityGivesResult() {
+        logger.info("Started test.");
         SearchQuery searchQuery = SearchQueryCreator.withCredentialsFromProperty(ExistingCities.MINSK.name());
         int totalFoundResultsNumber = new SearchPage()
                 .openPage()
@@ -47,6 +49,7 @@ public class SearchTests extends CommonConditions {
     // +
     @Test
     public void mustBeAtLeastOneRoomForTomorrow() {
+        logger.info("Started test.");
         SearchQuery searchQuery = SearchQueryCreator.withCredentialsFromProperty(DateService.getNextDayDate(),
                 DateService.getNextWeekDate());
         int totalAvailableResultsNumber = new SearchPage()
@@ -60,6 +63,7 @@ public class SearchTests extends CommonConditions {
     // +
     @Test
     public void mustBeAtLeastOneFlatFound() {
+        logger.info("Started test.");
         SearchQuery searchQuery = SearchQueryCreator.withCredentialsFromProperty();
         int totalAvailableFlatsFound = new SearchPage()
                 .openPage()
@@ -73,6 +77,7 @@ public class SearchTests extends CommonConditions {
     // +
     @Test
     public void mustBeAtLeastOneFiveStarRoomWithWifiFound() {
+        logger.info("Started test.");
         SearchQuery searchQuery = SearchQueryCreator.withCredentialsFromProperty();
         int totalAvailableRoomsFound = new SearchPage()
                 .openPage()
@@ -87,6 +92,7 @@ public class SearchTests extends CommonConditions {
     // +
     @Test
     public void mustNotBeAnyRoomForLastWeek() {
+        logger.info("Started test.");
         SearchQuery searchQuery = SearchQueryCreator.withCredentialsFromProperty(DateService.getLastWeekDate(),
                 DateService.getNextWeekDate());
         String alertMessage = new SearchPage()
@@ -99,6 +105,7 @@ public class SearchTests extends CommonConditions {
     // +
     @Test
     public void searchInSpecialOffersMustFindAtLeastOneSpecialOffer() {
+        logger.info("Started test.");
         SearchQuery searchQuery = SearchQueryCreator.withCredentialsFromProperty();
         int totalSpecialOffersFound = new SearchPage()
                 .openPage()
@@ -112,6 +119,7 @@ public class SearchTests extends CommonConditions {
     // +
     @Test
     public void whenMoneyChangedToUsdPricesMustBeAtUsd() {
+        logger.info("Started test.");
         SearchQuery searchQuery = SearchQueryCreator.withCredentialsFromProperty();
         String currencyOfPrices = new SearchPage()
                 .openPage()

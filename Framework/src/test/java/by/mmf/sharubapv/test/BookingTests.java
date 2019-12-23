@@ -14,6 +14,7 @@ import static org.hamcrest.Matchers.is;
 public class BookingTests extends CommonConditions {
     @Test
     public void oneCanBookRoomForTwoAdults() {
+        logger.info("Started test.");
         Guest firstGuest = GuestCreator.withCredentialsFromProperty(0);
         Guest secondGuest = GuestCreator.withCredentialsFromProperty(1);
         SearchQuery searchQuery = SearchQueryCreator.withCredentialsFromProperty();
