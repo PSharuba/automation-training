@@ -29,7 +29,7 @@ public class DriverSingleton {
                 default: {
 
                     ChromeOptions options = new ChromeOptions();
-                    options.addArguments("start-maximized"); // open Browser in maximized mode
+                    //options.addArguments("start-maximized"); // open Browser in maximized mode
                     options.addArguments("disable-infobars"); // disabling infobars
                     options.addArguments("--disable-extensions"); // disabling extensions
                     options.addArguments("--disable-gpu"); // applicable to windows os only
@@ -39,7 +39,7 @@ public class DriverSingleton {
                     driver = new ChromeDriver(options);
                 }
             }
-            driver.manage().window().maximize();
+            //driver.manage().window().maximize();
         }
         return driver;
     }
