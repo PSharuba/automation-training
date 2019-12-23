@@ -53,28 +53,28 @@ public class TestListener implements ITestListener {
     }
 
     private void saveScreenshot() {
-//        File screenCapture = ((TakesScreenshot) DriverSingleton
-//                .getDriver())
-//                .getScreenshotAs(OutputType.FILE);
-//        try {
-//            FileUtils.copyFile(screenCapture, new File(
-//                    ".//target/screenshots/"
-//                            + getCurrentTimeAsString() +
-//                            ".png"));
-//        } catch (IOException e) {
-//            log.error("Failed to save screenshot: " + e.getLocalizedMessage());
-//        }
+        File screenCapture = ((TakesScreenshot) DriverSingleton
+                .getDriver())
+                .getScreenshotAs(OutputType.FILE);
         try {
-            Thread.sleep(120);
-            Robot r = new Robot();
-            Rectangle capture =
-                    new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
-            BufferedImage Image = r.createScreenCapture(capture);
-            ImageIO.write(Image, "jpg", new File(SCREENSHOTS_PATH));
-            System.out.println("Screenshot saved");
-        } catch (AWTException | IOException | InterruptedException ex) {
-            System.out.println("Error taking screenshot: " + ex);
+            FileUtils.copyFile(screenCapture, new File(
+                    ".//target/screenshots/"
+                            + getCurrentTimeAsString() +
+                            ".png"));
+        } catch (IOException e) {
+            log.error("Failed to save screenshot: " + e.getLocalizedMessage());
         }
+//        try {
+//            Thread.sleep(120);
+//            Robot r = new Robot();
+//            Rectangle capture =
+//                    new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
+//            BufferedImage Image = r.createScreenCapture(capture);
+//            ImageIO.write(Image, "jpg", new File(SCREENSHOTS_PATH));
+//            System.out.println("Screenshot saved");
+//        } catch (AWTException | IOException | InterruptedException ex) {
+//            System.out.println("Error taking screenshot: " + ex);
+//        }
     }
 
     private String getCurrentTimeAsString() {
