@@ -42,7 +42,7 @@ public class DriverSingleton {
                     options.addArguments("--headless");
                     options.addArguments("--disable-gpu");
                     options.addArguments("--no-sandbox");
-                    options.addArguments("--window-size=1920,1080");
+                    //options.addArguments("--window-size=1920,1080");
 
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver(options);
