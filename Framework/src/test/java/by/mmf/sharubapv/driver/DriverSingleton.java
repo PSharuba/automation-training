@@ -27,29 +27,19 @@ public class DriverSingleton {
                     driver = new FirefoxDriver();
                 }
                 default: {
-//
-//                    ChromeOptions options = new ChromeOptions();
-//                    //options.addArguments("start-maximized"); // open Browser in maximized mode
-//                    options.addArguments("disable-infobars"); // disabling infobars
-//                    options.addArguments("--disable-extensions"); // disabling extensions
-//                    options.addArguments("--disable-gpu"); // applicable to windows os only
-//                    options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-//                    options.addArguments("--no-sandbox"); // Bypass OS security model
-//                    WebDriverManager.chromedriver().version("79.0.3945.36").setup();
-//                    driver = new ChromeDriver(options);
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("--disable-extensions");
                     options.addArguments("--headless");
                     options.addArguments("--disable-gpu");
                     options.addArguments("--no-sandbox");
-                    //options.addArguments("--window-size=1920,1080");
+                    options.addArguments("--window-size=1920,1080");
 
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver(options);
 
                 }
             }
-            //driver.manage().window().maximize();
+            driver.manage().window().maximize();
         }
         return driver;
     }
