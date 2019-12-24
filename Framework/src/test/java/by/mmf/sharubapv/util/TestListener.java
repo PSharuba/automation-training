@@ -53,17 +53,17 @@ public class TestListener implements ITestListener {
     }
 
     private void saveScreenshot() {
-        File screenCapture = ((TakesScreenshot) DriverSingleton
-                .getDriver())
-                .getScreenshotAs(OutputType.FILE);
-        try {
-            FileUtils.copyFile(screenCapture, new File(
-                    ".//target/screenshots/"
-                            + getCurrentTimeAsString() +
-                            ".png"));
-        } catch (IOException e) {
-            log.error("Failed to save screenshot: " + e.getLocalizedMessage());
-        }
+//        File screenCapture = ((TakesScreenshot) DriverSingleton
+//                .getDriver())
+//                .getScreenshotAs(OutputType.FILE);
+//        try {
+//            FileUtils.copyFile(screenCapture, new File(
+//                    ".//target/screenshots/"
+//                            + getCurrentTimeAsString() +
+//                            ".png"));
+//        } catch (IOException e) {
+//            log.error("Failed to save screenshot: " + e.getLocalizedMessage());
+//        }
     }
 
     private String getCurrentTimeAsString() {
