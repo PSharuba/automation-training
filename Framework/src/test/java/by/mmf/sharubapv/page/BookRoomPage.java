@@ -38,6 +38,8 @@ public class BookRoomPage extends AbstractPage {
 
     public BookRoomPage() {
         super();
+        new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
+                .until(ExpectedConditions.presenceOfElementLocated(linkBookFormElementLocator));
         baseUrl = driver.getCurrentUrl();
         PageFactory.initElements(this.driver, this);
     }
@@ -61,7 +63,7 @@ public class BookRoomPage extends AbstractPage {
     @Override
     public BookRoomPage openPage() {
         driver.navigate().to(baseUrl);
-        logger.info("URL: "+baseUrl);
+        logger.info("URL: " + baseUrl);
         logger.info("Booking page opened");
         return this;
     }
