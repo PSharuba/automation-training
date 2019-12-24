@@ -40,7 +40,7 @@ public class BookRoomPage extends AbstractPage {
         baseUrl = driver.getCurrentUrl();
         PageFactory.initElements(this.driver, this);
     }
-    
+
     public BookRoomPage bookRoom(Guest firstGuest, Guest secondGuest) {
         new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
                 .until(ExpectedConditions.presenceOfElementLocated(linkBookFormElementLocator));

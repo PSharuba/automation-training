@@ -112,7 +112,6 @@ public class MainPage extends AbstractPage {
             logger.warn("No such hotel found. Taking first hotel");
         }
         hotelUrl = hotelLinkButton.getAttribute("href");
-        hotelLinkButton.click();
         logger.info("Going to hotel page");
         return new HotelPage(hotelUrl).openPage();
     }
