@@ -1,60 +1,20 @@
-2019-12-19 16:15:08,145 INFO  [main] Test started
-2019-12-19 16:15:10,488 INFO  [main] Page object created
-2019-12-19 16:15:13,857 INFO  [main] Opening search page
-2019-12-19 16:15:14,786 INFO  [main] Search fields filled
-2019-12-19 16:15:14,927 INFO  [main] Going to main page
-2019-12-19 16:15:14,928 INFO  [main] Page object created
-2019-12-19 16:15:19,100 INFO  [main] Hotels list found
-2019-12-19 16:15:19,281 INFO  [main] Hotel chosen correctly
-2019-12-19 16:15:19,481 INFO  [main] Going to hotel page
-2019-12-19 16:15:19,482 INFO  [main] Page object created
-2019-12-19 16:15:24,246 INFO  [main] Got rooms list
-2019-12-19 16:15:24,246 INFO  [main] Hotel page opened
-2019-12-19 16:15:26,998 INFO  [main] Got rooms list
-2019-12-19 16:15:26,999 INFO  [main] Hotel page opened
-2019-12-19 16:15:27,051 INFO  [main] Got button for chosen room
-2019-12-19 16:15:30,116 INFO  [main] Going to room booking page
-2019-12-19 16:15:30,117 INFO  [main] Page object created
-2019-12-19 16:15:42,837 INFO  [main] Page object created
-2019-12-19 16:15:46,477 INFO  [main] Opening search page
-2019-12-19 16:15:47,370 INFO  [main] Search fields filled
-2019-12-19 16:15:51,917 INFO  [main] Going to main page
-2019-12-19 16:15:51,918 INFO  [main] Page object created
-2019-12-19 16:15:52,263 INFO  [main] Hotels list found
-2019-12-19 16:15:54,403 INFO  [main] Page object created
-2019-12-19 16:15:57,671 INFO  [main] Opening search page
-2019-12-19 16:15:58,748 INFO  [main] Search fields filled
-2019-12-19 16:15:58,925 INFO  [main] Going to main page
-2019-12-19 16:15:58,926 INFO  [main] Page object created
-2019-12-19 16:16:02,674 INFO  [main] Hotels list found
-2019-12-19 16:16:05,020 INFO  [main] Page object created
-2019-12-19 16:16:08,957 INFO  [main] Opening search page
-2019-12-19 16:16:09,905 INFO  [main] Search fields filled
-2019-12-19 16:16:14,071 INFO  [main] Going to main page
-2019-12-19 16:16:14,072 INFO  [main] Page object created
-2019-12-19 16:16:14,258 INFO  [main] Hotels list found
-2019-12-19 16:16:16,144 INFO  [main] Page object created
-2019-12-19 16:16:21,994 INFO  [main] Opening search page
-2019-12-19 16:16:22,940 INFO  [main] Search fields filled
-2019-12-19 16:16:24,932 INFO  [main] Page object created
-2019-12-19 16:16:28,669 INFO  [main] Opening search page
-2019-12-19 16:16:29,705 INFO  [main] Search fields filled
-2019-12-19 16:16:29,830 INFO  [main] Going to main page
-2019-12-19 16:16:29,830 INFO  [main] Page object created
-2019-12-19 16:16:33,110 INFO  [main] Hotels list found
-2019-12-19 16:16:34,950 INFO  [main] Page object created
-2019-12-19 16:16:38,153 INFO  [main] Opening search page
-2019-12-19 16:16:39,199 INFO  [main] Search fields filled
-2019-12-19 16:16:39,199 INFO  [main] Searching for error message
-2019-12-19 16:16:40,564 INFO  [main] Found error: К сожалению, нам не удалось найти UY8C39FE0U4BSJB3SJL0
-2019-12-19 16:16:42,426 INFO  [main] Page object created
-2019-12-19 16:16:45,650 INFO  [main] Opening search page
-2019-12-19 16:16:47,933 INFO  [main] Page object created
-2019-12-19 16:16:48,858 INFO  [main] Search fields filled
-2019-12-19 16:16:49,054 INFO  [main] Going to main page
-2019-12-19 16:16:49,055 INFO  [main] Page object created
-2019-12-19 16:16:53,221 INFO  [main] Hotels list found
-2019-12-19 16:16:55,116 INFO  [main] Page object created
-2019-12-19 16:16:58,163 INFO  [main] Opening search page
-2019-12-19 16:17:01,321 INFO  [main] Search fields filled
-2019-12-19 16:17:03,998 INFO  [main] Test finished
+2019-12-24 11:49:53,649 INFO  [main] Test started
+2019-12-24 11:49:59,357 INFO  [main] Started test.
+2019-12-24 11:49:59,368 INFO  [main] Page object created
+2019-12-24 11:50:15,203 INFO  [main] Opening search page
+2019-12-24 11:50:15,959 INFO  [main] Search fields filled
+2019-12-24 11:50:16,141 INFO  [main] Going to main page
+2019-12-24 11:50:16,142 INFO  [main] Page object created
+2019-12-24 11:50:22,512 INFO  [main] Hotels list found
+2019-12-24 11:50:22,587 INFO  [main] Hotel chosen correctly
+2019-12-24 11:50:23,073 INFO  [main] Going to hotel page
+2019-12-24 11:50:23,074 INFO  [main] Page object created
+2019-12-24 11:50:26,562 INFO  [main] Got rooms list
+2019-12-24 11:50:26,565 INFO  [main] Hotel page opened
+2019-12-24 11:50:29,151 INFO  [main] Got rooms list
+2019-12-24 11:50:29,152 INFO  [main] Hotel page opened
+2019-12-24 11:50:29,376 INFO  [main] Got button for chosen room
+2019-12-24 11:50:29,885 INFO  [main] Going to room booking page
+2019-12-24 11:50:29,886 INFO  [main] Page object created
+2019-12-24 11:50:34,957 INFO  [main] Guests personal data filled
+2019-12-24 11:50:35,576 INFO  [main] Test finished

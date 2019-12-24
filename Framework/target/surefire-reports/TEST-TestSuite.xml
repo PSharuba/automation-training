@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="116.552" tests="9" errors="0" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="42.761" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,9 +17,9 @@
     <property name="os.name" value="Windows 10"/>
     <property name="user.country" value="RU"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="surefire.suitexml" value="src\test\resources\testing-all.xml"/>
+    <property name="surefire.suitexml" value="src/test/resources/testing-smoke.xml"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\mynam\AppData\Local\Temp\surefire7477104038988164\surefirebooter3322589712893332138.jar C:\Users\mynam\AppData\Local\Temp\surefire7477104038988164 2019-12-19T16-15-05_929-jvmRun1 surefire5387023231988743840tmp surefire_03320860579226440697tmp"/>
+    <property name="sun.java.command" value="C:\Users\mynam\AppData\Local\Temp\surefire1748385912013006421\surefirebooter8497911205453855475.jar C:\Users\mynam\AppData\Local\Temp\surefire1748385912013006421 2019-12-24T11-49-50_747-jvmRun1 surefire552792655296882078tmp surefire_0194922687166144173tmp"/>
     <property name="surefire.test.class.path" value="D:\automation\automation-training\Framework\target\test-classes;D:\automation\automation-training\Framework\target\classes;C:\Users\mynam\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.0\selenium-java-3.141.0.jar;C:\Users\mynam\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.0\selenium-api-3.141.0.jar;C:\Users\mynam\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.0\selenium-chrome-driver-3.141.0.jar;C:\Users\mynam\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.0\selenium-edge-driver-3.141.0.jar;C:\Users\mynam\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.0\selenium-firefox-driver-3.141.0.jar;C:\Users\mynam\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.0\selenium-ie-driver-3.141.0.jar;C:\Users\mynam\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.0\selenium-opera-driver-3.141.0.jar;C:\Users\mynam\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.0\selenium-remote-driver-3.141.0.jar;C:\Users\mynam\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.0\selenium-safari-driver-3.141.0.jar;C:\Users\mynam\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.0\selenium-support-3.141.0.jar;C:\Users\mynam\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\mynam\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\mynam\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\mynam\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\mynam\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\mynam\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\mynam\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\mynam\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\mynam\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\mynam\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\mynam\.m2\repository\io\github\bonigarcia\webdrivermanager\3.3.0\webdrivermanager-3.3.0.jar;C:\Users\mynam\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\mynam\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;C:\Users\mynam\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\mynam\.m2\repository\org\apache\httpcomponents\httpclient\4.5.6\httpclient-4.5.6.jar;C:\Users\mynam\.m2\repository\org\apache\httpcomponents\httpcore\4.4.10\httpcore-4.4.10.jar;C:\Users\mynam\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\mynam\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\mynam\.m2\repository\org\rauschig\jarchivelib\1.0.0\jarchivelib-1.0.0.jar;C:\Users\mynam\.m2\repository\org\apache\commons\commons-compress\1.18\commons-compress-1.18.jar;C:\Users\mynam\.m2\repository\org\jsoup\jsoup\1.11.3\jsoup-1.11.3.jar;C:\Users\mynam\.m2\repository\org\testng\testng\6.14.3\testng-6.14.3.jar;C:\Users\mynam\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\mynam\.m2\repository\org\apache-extras\beanshell\bsh\2.0b6\bsh-2.0b6.jar;C:\Users\mynam\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\mynam\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\mynam\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.1\log4j-api-2.11.1.jar;C:\Users\mynam\.m2\repository\org\apache\logging\log4j\log4j-core\2.11.1\log4j-core-2.11.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\mynam"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\mynam\AppData\Local\Temp\surefire7477104038988164\surefirebooter3322589712893332138.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mynam\AppData\Local\Temp\surefire1748385912013006421\surefirebooter8497911205453855475.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -55,7 +55,7 @@
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="environment" value="dev"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;D:\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;D:\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Gradle\gradle-5.5.1\bin;D:\MatLab\bin;D:\PuTTY\;D:\apache-maven\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;D:\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;D:\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\mynam\AppData\Local\Microsoft\WindowsApps;C:\Users\mynam\AppData\Roaming\npm;D:\IntelliJ IDEA Community Edition 2018.3.4\bin;;D:\WebStorm 2018.3.4\bin;;D:\PhpStorm 2018.3.4\bin;;C:\Users\mynam\AppData\Roaming\Composer\vendor\bin;C:\Users\mynam\AppData\Local\Android\Sdk\platform-tools;D:\_IDEA_Cracked\IntelliJIDEA2019.2\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\_IDEA_Cracked\IntelliJIDEA2019.2\jbr\\bin;D:\_IDEA_Cracked\IntelliJIDEA2019.2\jbr\\bin\server;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;D:\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;D:\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Gradle\gradle-5.5.1\bin;D:\MatLab\bin;D:\PuTTY\;D:\apache-maven\bin;D:\apache-maven\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;D:\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;D:\PHP;C:\ProgramData\ComposerSetup\bin;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\mynam\AppData\Local\Microsoft\WindowsApps;C:\Users\mynam\AppData\Roaming\npm;D:\IntelliJ IDEA Community Edition 2018.3.4\bin;;D:\WebStorm 2018.3.4\bin;;D:\PhpStorm 2018.3.4\bin;;C:\Users\mynam\AppData\Roaming\Composer\vendor\bin;C:\Users\mynam\AppData\Local\Android\Sdk\platform-tools;D:\_IDEA_Cracked\IntelliJIDEA2019.2\bin;;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="25.201-b09"/>
@@ -63,98 +63,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="oneCanBookRoomForTwoAdults" classname="by.mmf.sharubapv.test.BookingTests" time="30.471">
-    <failure message="Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id=&apos;booking-form&apos;] (tried for 10 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id='booking-form'] (tried for 10 second(s) with 500 milliseconds interval)
-	at by.mmf.sharubapv.test.BookingTests.oneCanBookRoomForTwoAdults(BookingTests.java:27)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='booking-form']"}
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
-System info: host: 'DESKTOP-8NOJ2V6', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\mynam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:12426}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ec9d6856bcd636df472ce2a3b3e50515
-*** Element info: {Using=xpath, value=//*[@id='booking-form']}
-	at by.mmf.sharubapv.test.BookingTests.oneCanBookRoomForTwoAdults(BookingTests.java:27)
-</failure>
-    <system-out><![CDATA[2019-12-19 16:15:08,145 INFO  [main] by.mmf.sharubapv.util.TestListener.onStart(TestListener.java:44) Test started
-Browser: chrome
-Environment: dev
-Environment: dev
-Environment: dev
-Environment: dev
-Environment: dev
-Environment: dev
-Environment: dev
-Environment: dev
-Environment: dev
-Environment: dev
-Environment: dev
-2019-12-19 16:15:10,488 INFO  [main] by.mmf.sharubapv.page.AbstractPage.<init>(AbstractPage.java:19) Page object created
-2019-12-19 16:15:13,857 INFO  [main] by.mmf.sharubapv.page.SearchPage.openPage(SearchPage.java:108) Opening search page
-2019-12-19 16:15:14,786 INFO  [main] by.mmf.sharubapv.page.SearchPage.enterDataToSearchFor(SearchPage.java:66) Search fields filled
-2019-12-19 16:15:14,927 INFO  [main] by.mmf.sharubapv.page.SearchPage.clickSearchButton(SearchPage.java:78) Going to main page
-2019-12-19 16:15:14,928 INFO  [main] by.mmf.sharubapv.page.AbstractPage.<init>(AbstractPage.java:19) Page object created
-2019-12-19 16:15:19,100 INFO  [main] by.mmf.sharubapv.page.MainPage.getHotelsList(MainPage.java:68) Hotels list found
-2019-12-19 16:15:19,281 INFO  [main] by.mmf.sharubapv.page.MainPage.goToHotelPage(MainPage.java:108) Hotel chosen correctly
-2019-12-19 16:15:19,481 INFO  [main] by.mmf.sharubapv.page.MainPage.goToHotelPage(MainPage.java:116) Going to hotel page
-2019-12-19 16:15:19,482 INFO  [main] by.mmf.sharubapv.page.AbstractPage.<init>(AbstractPage.java:19) Page object created
-2019-12-19 16:15:24,246 INFO  [main] by.mmf.sharubapv.page.HotelPage.getRoomsList(HotelPage.java:60) Got rooms list
-2019-12-19 16:15:24,246 INFO  [main] by.mmf.sharubapv.page.HotelPage.openPage(HotelPage.java:89) Hotel page opened
-2019-12-19 16:15:26,998 INFO  [main] by.mmf.sharubapv.page.HotelPage.getRoomsList(HotelPage.java:60) Got rooms list
-2019-12-19 16:15:26,999 INFO  [main] by.mmf.sharubapv.page.HotelPage.openPage(HotelPage.java:89) Hotel page opened
-2019-12-19 16:15:27,051 INFO  [main] by.mmf.sharubapv.page.HotelPage.goToRoomBookPage(HotelPage.java:69) Got button for chosen room
-2019-12-19 16:15:30,116 INFO  [main] by.mmf.sharubapv.page.HotelPage.goToRoomBookPage(HotelPage.java:81) Going to room booking page
-2019-12-19 16:15:30,117 INFO  [main] by.mmf.sharubapv.page.AbstractPage.<init>(AbstractPage.java:19) Page object created
-]]></system-out>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-дек 19, 2019 4:15:08 PM java.util.prefs.WindowsPreferences <init>
-WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs at root 0x80000002. Windows RegCreateKeyEx(...) returned error code 5.
-дек 19, 2019 4:15:09 PM org.openqa.selenium.remote.DesiredCapabilities chrome
-INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 16515
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-дек 19, 2019 4:15:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="mustBeAtLeastOneFiveStarRoomWithWifiFound" classname="by.mmf.sharubapv.test.SearchTests" time="9.703"/>
-  <testcase name="mustBeAtLeastOneFlatFound" classname="by.mmf.sharubapv.test.SearchTests" time="8.772"/>
-  <testcase name="mustBeAtLeastOneRoomForTomorrow" classname="by.mmf.sharubapv.test.SearchTests" time="9.276"/>
-  <testcase name="mustNotBeAnyRoomForLastWeek" classname="by.mmf.sharubapv.test.SearchTests" time="6.942"/>
-  <testcase name="searchForExistingCityGivesResult" classname="by.mmf.sharubapv.test.SearchTests" time="8.191"/>
-  <testcase name="searchForRandomStringGivesError" classname="by.mmf.sharubapv.test.SearchTests" time="5.625"/>
-  <testcase name="searchInSpecialOffersMustFindAtLeastOneSpecialOffer" classname="by.mmf.sharubapv.test.SearchTests" time="10.871"/>
-  <testcase name="whenMoneyChangedToUsdPricesMustBeAtUsd" classname="by.mmf.sharubapv.test.SearchTests" time="8.255">
-    <failure message="element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;cta cta-strong&quot;&gt;...&lt;/button&gt; is not clickable at point (479, 468). Other element would receive the click: &lt;td colspan=&quot;2&quot;&gt;...&lt;/td&gt;&#10;  (Session info: chrome=79.0.3945.88)&#10;Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;&#10;System info: host: &apos;DESKTOP-8NOJ2V6&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\mynam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:13227}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: c43b3f156f5e5eef6354e68ce0c781be" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <button type="submit" class="cta cta-strong">...</button> is not clickable at point (479, 468). Other element would receive the click: <td colspan="2">...</td>
-  (Session info: chrome=79.0.3945.88)
-Build info: version: '3.141.0', revision: '2ecb7d9a', time: '2018-10-31T20:09:30'
-System info: host: 'DESKTOP-8NOJ2V6', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\mynam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:13227}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c43b3f156f5e5eef6354e68ce0c781be
-	at by.mmf.sharubapv.test.SearchTests.whenMoneyChangedToUsdPricesMustBeAtUsd(SearchTests.java:120)
-]]></failure>
-    <system-out><![CDATA[Browser: chrome
-Environment: dev
-Environment: dev
-Environment: dev
-2019-12-19 16:16:55,116 INFO  [main] by.mmf.sharubapv.page.AbstractPage.<init>(AbstractPage.java:19) Page object created
-2019-12-19 16:16:58,163 INFO  [main] by.mmf.sharubapv.page.SearchPage.openPage(SearchPage.java:108) Opening search page
-2019-12-19 16:17:01,321 INFO  [main] by.mmf.sharubapv.page.SearchPage.enterDataToSearchFor(SearchPage.java:66) Search fields filled
-]]></system-out>
-    <system-err><![CDATA[дек 19, 2019 4:16:53 PM org.openqa.selenium.remote.DesiredCapabilities chrome
-INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}) on port 28506
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-дек 19, 2019 4:16:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
+  <testcase name="oneCanBookRoomForTwoAdults" classname="by.mmf.sharubapv.test.BookingTests" time="35.64"/>
 </testsuite>

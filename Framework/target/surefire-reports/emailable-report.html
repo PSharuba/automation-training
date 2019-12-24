@@ -9,65 +9,10 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">7</td><td class="num">0</td><td class="num attn">2</td><td class="num">115 857</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">41 933</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">by.mmf.sharubapv.test.BookingTests</td><td><a href="#m0">oneCanBookRoomForTwoAdults</a></td><td rowspan="1">1576761310483</td><td rowspan="1">30102</td></tr><tr class="failedodd"><td rowspan="1">by.mmf.sharubapv.test.SearchTests</td><td><a href="#m1">whenMoneyChangedToUsdPricesMustBeAtUsd</a></td><td rowspan="1">1576761415115</td><td rowspan="1">7382</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">by.mmf.sharubapv.test.SearchTests</td><td><a href="#m2">mustBeAtLeastOneFiveStarRoomWithWifiFound</a></td><td rowspan="1">1576761342837</td><td rowspan="1">9703</td></tr><tr class="passedeven"><td><a href="#m3">mustBeAtLeastOneFlatFound</a></td><td rowspan="1">1576761354403</td><td rowspan="1">8771</td></tr><tr class="passedeven"><td><a href="#m4">mustBeAtLeastOneRoomForTomorrow</a></td><td rowspan="1">1576761365020</td><td rowspan="1">9275</td></tr><tr class="passedeven"><td><a href="#m5">mustNotBeAnyRoomForLastWeek</a></td><td rowspan="1">1576761376143</td><td rowspan="1">6941</td></tr><tr class="passedeven"><td><a href="#m6">searchForExistingCityGivesResult</a></td><td rowspan="1">1576761384931</td><td rowspan="1">8180</td></tr><tr class="passedeven"><td><a href="#m7">searchForRandomStringGivesError</a></td><td rowspan="1">1576761394950</td><td rowspan="1">5623</td></tr><tr class="passedeven"><td><a href="#m8">searchInSpecialOffersMustFindAtLeastOneSpecialOffer</a></td><td rowspan="1">1576761402426</td><td rowspan="1">10870</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">by.mmf.sharubapv.test.BookingTests</td><td><a href="#m0">oneCanBookRoomForTwoAdults</a></td><td rowspan="1">1577177399355</td><td rowspan="1">35640</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">by.mmf.sharubapv.test.BookingTests#oneCanBookRoomForTwoAdults</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@id=&apos;booking-form&apos;] (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at by.mmf.sharubapv.page.BookRoomPage.bookRoom(BookRoomPage.java:46)
-	at by.mmf.sharubapv.test.BookingTests.oneCanBookRoomForTwoAdults(BookingTests.java:27)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;booking-form&apos;]&quot;}
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;
-System info: host: &apos;DESKTOP-8NOJ2V6&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\mynam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:12426}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: ec9d6856bcd636df472ce2a3b3e50515
-*** Element info: {Using=xpath, value=//*[@id=&apos;booking-form&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 32 more
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">by.mmf.sharubapv.test.SearchTests#whenMoneyChangedToUsdPricesMustBeAtUsd</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;cta cta-strong&quot;&gt;...&lt;/button&gt; is not clickable at point (479, 468). Other element would receive the click: &lt;td colspan=&quot;2&quot;&gt;...&lt;/td&gt;
-  (Session info: chrome=79.0.3945.88)
-Build info: version: &apos;3.141.0&apos;, revision: &apos;2ecb7d9a&apos;, time: &apos;2018-10-31T20:09:30&apos;
-System info: host: &apos;DESKTOP-8NOJ2V6&apos;, ip: &apos;192.168.1.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\mynam\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:13227}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c43b3f156f5e5eef6354e68ce0c781be
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy23.click(Unknown Source)
-	at by.mmf.sharubapv.page.SearchPage.clickSearchButton(SearchPage.java:77)
-	at by.mmf.sharubapv.test.SearchTests.whenMoneyChangedToUsdPricesMustBeAtUsd(SearchTests.java:120)
-... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">by.mmf.sharubapv.test.SearchTests#mustBeAtLeastOneFiveStarRoomWithWifiFound</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">by.mmf.sharubapv.test.SearchTests#mustBeAtLeastOneFlatFound</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">by.mmf.sharubapv.test.SearchTests#mustBeAtLeastOneRoomForTomorrow</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">by.mmf.sharubapv.test.SearchTests#mustNotBeAnyRoomForLastWeek</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">by.mmf.sharubapv.test.SearchTests#searchForExistingCityGivesResult</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">by.mmf.sharubapv.test.SearchTests#searchForRandomStringGivesError</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">by.mmf.sharubapv.test.SearchTests#searchInSpecialOffersMustFindAtLeastOneSpecialOffer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">by.mmf.sharubapv.test.BookingTests#oneCanBookRoomForTwoAdults</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

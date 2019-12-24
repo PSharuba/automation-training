@@ -129,5 +129,4 @@ public class SearchTests extends CommonConditions {
                 .getPriceCurrency();
         assertThat(currencyOfPrices, is(equalTo("USD")));
     }
-
 }

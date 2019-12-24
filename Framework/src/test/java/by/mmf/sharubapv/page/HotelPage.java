@@ -35,17 +35,9 @@ public class HotelPage extends AbstractPage {
     @FindBy(xpath = "//*[@id='q-localised-check-out']")
     private WebElement dateToLeaveField;
 
-    //@FindBy(xpath = "//button[contains(text(), 'Найти')]")
-    //private WebElement searchButton;
-
-    @FindBy(xpath = "//ul[@class='rooms']")
-    private WebElement roomsList;
-
     private WebElement[] rooms;
 
     private final By linkRoomsListLocator = By.xpath("//ul[@class='rooms']");
-
-    //private final By linkWidgetPaymentMethodLocator = By.xpath("//div[contains(class(), 'widget-overlay')]");
 
     public HotelPage(String baseUrl) {
         super();
