@@ -12,7 +12,7 @@ public abstract class AbstractPage {
 
     protected abstract AbstractPage openPage();
 
-    protected final int WAIT_TIMEOUT_SECONDS = 30;
+    protected final int WAIT_TIMEOUT_SECONDS = 20;
 
     protected AbstractPage() {
         this.driver = DriverSingleton.getDriver();
