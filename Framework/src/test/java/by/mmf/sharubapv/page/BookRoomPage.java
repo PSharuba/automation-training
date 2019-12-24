@@ -13,6 +13,7 @@ import org.apache.logging.log4j.Logger;
 
 public class BookRoomPage extends AbstractPage {
 
+    protected final int WAIT_TIMEOUT_SECONDS = 40;
     private String baseUrl;
 
     @FindBy(xpath = "//*[@id='headline']/h1")
