@@ -65,10 +65,12 @@ public class HotelPage extends AbstractPage {
             logger.warn("No such room found. Taking first room");
         }
         bookRoomLinkButton.click();
+        logger.info("Clicked room button");
         try {
             driver.findElement(PAYMENT_MESSAGE_LOCATOR);
             driver.findElement(ONLINE_PAYMENT_LOCATOR).click();
         } catch (NoSuchElementException ignored) {
+            logger.warn("Only online payment");
         }
         logger.info("Going to room booking page");
         return new BookRoomPage();

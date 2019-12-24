@@ -33,7 +33,7 @@ public class BookRoomPage extends AbstractPage {
     @FindBy(xpath = "//*[@id='contact-details-phone']")
     private WebElement contactPhoneField;
 
-    private final By linkBookFormElementLocator = By.xpath("//*[@id='room-details-room-0-first-name']");
+    private final By linkBookFormElementLocator = By.xpath("//*[@id='headline']/h1");
 
     public BookRoomPage() {
         super();
