@@ -25,6 +25,7 @@ public class BookingTests extends CommonConditions {
                 .goToHotelPage(0)
                 .openPage()
                 .goToRoomBookPage(0)
+                .openPage()
                 .bookRoom(firstGuest, secondGuest)
                 .isBookingComplete();
         assertThat(isSearchComplete, is(equalTo(true)));
