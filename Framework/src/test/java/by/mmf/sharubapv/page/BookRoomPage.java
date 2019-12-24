@@ -15,7 +15,7 @@ public class BookRoomPage extends AbstractPage {
 
     private String baseUrl;
 
-    @FindBy(xpath="//*[@id='headline']/h1")
+    @FindBy(xpath = "//*[@id='headline']/h1")
     private WebElement finishPaymentHeader;
 
     @FindBy(xpath = "//*[@id='room-details-room-0-first-name']")
@@ -33,17 +33,17 @@ public class BookRoomPage extends AbstractPage {
     @FindBy(xpath = "//*[@id='contact-details-phone']")
     private WebElement contactPhoneField;
 
-    private final By linkBookFormLocator = By.xpath("//*[@id='booking-form']");
+    private final By linkBookFormElementLocator = By.xpath("//*[@id='room-details-room-0-first-name']");
 
     public BookRoomPage() {
         super();
         baseUrl = driver.getCurrentUrl();
         PageFactory.initElements(this.driver, this);
     }
-
+    
     public BookRoomPage bookRoom(Guest firstGuest, Guest secondGuest) {
         new WebDriverWait(driver, WAIT_TIMEOUT_SECONDS)
-                .until(ExpectedConditions.presenceOfElementLocated(linkBookFormLocator));
+                .until(ExpectedConditions.presenceOfElementLocated(linkBookFormElementLocator));
         firstGuestFirstName.sendKeys(firstGuest.getFirstName());
         firstGuestLastName.sendKeys(firstGuest.getLastName());
         secondGuestName.sendKeys(secondGuest.getLastName() + " " + secondGuest.getLastName());
